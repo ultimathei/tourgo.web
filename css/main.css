@@ -14,7 +14,7 @@
 		border: none;
 		font-family: Montserrat, Arial, Sans Serif;
   }
-  
+
 	#LandingPage___Desktop {
 		width: 100vw;
 		--web-view-name: LandingPage - Desktop;
@@ -22,6 +22,7 @@
 		--web-scale-on-resize: true;
 		--web-enable-deep-linking: true;
 		overflow-x: hidden;
+		overflow-y: scroll;
   }
 
 	h1, h2, h3{

@@ -100,9 +100,50 @@
 	margin-bottom: 10vh;
 }
 
+
+@keyframes fadeinFromLeft {
+  0% {
+		opacity: 0;
+		left: -100%;
+	}
+	25% {
+		left: -5%;
+	}
+	100% {
+		opacity: 1;
+		left: 0;
+	}
+}
+
+#HomeLeft h1{
+	position: relative;
+	opacity: 0;
+	left: -100%;
+	animation: fadeinFromLeft 1s ease-out forwards; 
+}
+
+@keyframes fadeinFromRight {
+  0% {
+		opacity: 0;
+		right: -100%;
+	}
+	25% {
+		right: -5%;
+	}
+	100% {
+		opacity: 1;
+		right: 0;
+	}
+}
+
 #HomeLeft h2 {
+	position: relative;
 	text-transform: none;
 	max-width: 300px;
+	opacity: 0;
+	right: -100%;
+	animation: fadeinFromRight 1s ease-out forwards; 
+	animation-delay: .5s;
 }
 
 #HomeLeft button {
@@ -153,6 +194,21 @@
 	align-items: center;
 }
 
+@keyframes popScale {
+  0% {
+		opacity: 0;
+		transform: scale(0.75);
+	}
+	25% {
+		opacity: 1;
+		transform: scale(1.05);
+	}
+	100% {
+		opacity: 1;
+		transform: scale(1);
+	}
+}
+
 #HomeRight .HomeRightTop button {
 	width: 100%;
 	border: none;
@@ -165,6 +221,11 @@
 	justify-content: center;
 	font-size: 1em;
 	padding: 1em;
+	position: relative;
+	opacity: 0;
+	transform: scale(1);
+	animation: popScale .5s ease-out forwards;
+	animation-delay: 1s;
 }
 
 #HomeRight .HomeRightTop button p {
@@ -208,11 +269,30 @@
 #phone_mockup {
 	position: relative;
 	height: 100vh;
+	width: auto;
 	max-height: 600px;
 }
-
+@keyframes fadeinFromBottom {
+  0% {
+		opacity: 0;
+		bottom: -25%;
+	}
+	25% {
+		opacity: 1;
+		bottom: -5%;
+	}
+	100% {
+		opacity: 1;
+		bottom: 0;
+	}
+}
 #phone_mockup>img {
+	position: relative;
 	height: 100%;
+	opacity: 0;
+	bottom: 0;
+	animation: fadeinFromBottom .5s ease-out forwards;
+	animation-delay: .2s;
 }
 
 .featureBubble {
@@ -252,7 +332,7 @@
 }
 
 @media only screen and (max-width: 892px) {
-	#Home button {
+	#HomeRight button {
 		padding: 1em 0.6em !important;
 	}
 }

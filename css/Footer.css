@@ -120,7 +120,7 @@ footer .socialLinks a:hover svg>g:first-of-type{
     justify-content: space-between !important;
   }
   footer .footerContent section:first-of-type p{
-    text-align: center;
+    text-align: justify;
   }
   footer address {
     text-align: right;
