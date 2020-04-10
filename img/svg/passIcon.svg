@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40" height="40" viewBox="0 0 40 40">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_44" data-name="Rectangle 44" width="40" height="40" transform="translate(22 555)" fill="#fff"/>
+    </clipPath>
+  </defs>
+  <g id="Mask_Group_3" data-name="Mask Group 3" transform="translate(-22 -555)" clip-path="url(#clip-path)">
+    <g id="lock" transform="translate(22 449.329)">
+      <g id="Group_603" data-name="Group 603" transform="translate(0 114.671)">
+        <g id="Group_602" data-name="Group 602">
+          <path id="Path_1030" data-name="Path 1030" d="M35.9,117.107v2.344h1.761v2.173l-.4.428-1.172-1.426H33.393l-1.582,1.753-1.582-1.753H26.871l-.673.9-.673-.9H20.843a11.041,11.041,0,1,0,0,10.172H37.656v1.175H35.9v2.344H40v-17.21Zm-1.46,5.863h.54l1.291,1.57H33.017Zm-6.39,0h1.142l1.418,1.57H26.871Zm9.611,5.485H19.333l-.306.707a8.7,8.7,0,1,1,0-6.9l.306.707H24.35l1.174,1.57H19.453v2.344h18.2Z" transform="translate(0 -114.671)"/>
+        </g>
+      </g>
+      <g id="Group_605" data-name="Group 605" transform="translate(3.699 122.201)">
+        <g id="Group_604" data-name="Group 604" transform="translate(0 0)">
+          <path id="Path_1031" data-name="Path 1031" d="M50.861,211.052a3.512,3.512,0,1,0,3.512,3.512A3.515,3.515,0,0,0,50.861,211.052Zm0,4.679a1.168,1.168,0,1,1,1.168-1.168A1.169,1.169,0,0,1,50.861,215.731Z" transform="translate(-47.349 -211.052)"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

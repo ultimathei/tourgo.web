@@ -1,0 +1,373 @@
+#Home {
+	position: relative;
+	width: 100vw;
+	height: 100vh;
+	max-height: 900px;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	color: white;
+	overflow-x: hidden;
+	background-image: linear-gradient( to bottom right, #FF512F, #F09819);
+}
+
+#Home .Logo {
+	width: 100%;
+	max-width: 300px;
+}
+
+#Home h1 {
+	font-size: 1.8em;
+	margin-bottom: .2em;
+}
+
+#Home h2 {
+	font-size: 1em;
+	margin-bottom: 2em;
+	font-weight: 300;
+}
+
+#Home p {
+	color: white;
+	text-transform: uppercase;
+	font-weight: 300;
+}
+
+/***************
+** BACKGROUND **
+***************/
+
+#Home .background {
+	position: absolute;
+	z-index: 0;
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-flow: row;
+}
+
+#Home .background>* {
+	width: 50%;
+	height: 100%;
+	z-index: 0;
+}
+
+#Home .background>.left {
+	background-image: linear-gradient( to bottom right, #00609B, #103F69);
+}
+
+#Home .background>.right {
+	background-image: linear-gradient( to bottom right, #FF512F, #F09819);
+}
+
+/*****************
+* PAGE CONTENT ***
+*****************/
+
+#Home>.pageContent {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-flow: row;
+	justify-content: center;
+	align-items: center;
+	z-index: 1;
+	max-width: 1200px;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#HomeLeft, #HomeRight {
+	font-size: 1em;
+	width: 50%;
+	max-width: 600px;
+	height: 100%;
+	display: flex;
+	flex-flow: column;
+	align-items: flex-start;
+	padding: 2em;
+}
+
+/***************
+* HOME LEFT  ***
+***************/
+
+#HomeLeft {
+	justify-content: center;
+}
+
+#HomeLeft>.Logo {
+	margin-bottom: 5em;
+}
+
+#HomeLeft h2 {
+	text-transform: none;
+	max-width: 300px;
+}
+
+#HomeLeft button {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	align-items: center;
+}
+
+#HomeLeft button:hover {
+	background-color: white;
+}
+
+#HomeLeft button p {
+	color: white;
+	font-weight: 400;
+}
+
+#HomeLeft button:hover p {
+	color: #00609B;
+}
+
+#HomeLeft button .videoIcon {
+	fill: white;
+	margin-right: 1em;
+	height: 2.5em;
+}
+
+#HomeLeft button:hover .videoIcon {
+	fill: #00609B;
+}
+
+/***************
+/* HOME RIGHT **
+***************/
+
+#HomeRight {
+	justify-content: space-between;
+	align-items: flex-end;
+}
+
+#HomeRight .HomeRightTop {
+	padding-top: 10vh;
+	flex-grow: 1;
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#HomeRight .HomeRightTop button {
+	width: 100%;
+	border: none;
+	transition: background-image 0.5s ease;
+	background-image: linear-gradient( to bottom right, #00609B, #103F69);
+	margin: 0;
+	display: flex;
+	flex-flow: row wrap;
+	align-items: center;
+	justify-content: center;
+	font-size: 1em;
+	padding: 1em;
+}
+
+#HomeRight .HomeRightTop button p {
+	color: white;
+	font-weight: 400;
+}
+
+#HomeRight .winText {
+	text-transform: none;
+	font-weight: 300 !important;
+	font-size: .8em;
+}
+
+#HomeRight .HomeRightTop button>* {
+	margin: .3em;
+}
+
+#HomeRight .HomeRightTop button svg {
+	fill: white;
+	height: 2em;
+	width: auto;
+	margin: .5em 1em;
+}
+
+#HomeRight .HomeRightTop button:hover {
+	background-image: linear-gradient( to bottom right, rgb(0, 135, 219), #00609B);
+	color: #103F69;
+}
+
+#HomeRight .appStoreBadges {
+	display: flex;
+	flex-flow: column;
+}
+
+#HomeRight .appBadge {
+	width: 9em;
+}
+
+/*PHONE MOCKUP*/
+
+#phone_mockup {
+	position: relative;
+	height: 100vh;
+	max-height: 600px;
+}
+
+#phone_mockup>img {
+	height: 100%;
+}
+
+.featureBubble {
+	position: absolute;
+	height: 4em;
+	width: 20em;
+	bottom: 45%;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: white;
+	color: black;
+	border: 2px solid black;
+	border-radius: 5px;
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+	align-items: center;
+	display: none;
+}
+
+.featureBubble:nth-of-type(2) {
+	bottom: 30%;
+}
+
+.featureBubble:nth-of-type(3) {
+	bottom: 15%;
+}
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 1111px) {
+	#HomeLeft {
+		font-size: .8em;
+	}
+}
+
+@media only screen and (max-width: 892px) {
+	#Home button {
+		padding: 1em !important;
+	}
+}
+
+@media only screen and (orientation: landscape) and (max-width: 1010px) {
+	#HomeRight .HomeRightTop button div {
+		flex: 0 0 100%;
+		order: 1;
+	}
+}
+
+@media only screen and (orientation: landscape) and (max-width: 760px) {
+	#HomeRight .HomeRightTop button svg {
+		margin: 0.3em;
+	}
+}
+
+
+/*
+@media only screen and (orientation: portrait) and (min-width:700px) {
+	.pageContent{
+		transform: unset;
+		align-items: flex-start !important;
+	}
+	#HomeLeft{
+		transform: unset !important;
+		text-align: left  !important;
+		align-items: start !important;
+		max-width: unset !important;
+	}
+	#phone_mockup{
+		position: absolute !important;
+		right: 0;
+		height: 525px !important;
+	}
+}
+
+*/
+
+
+@media only screen and (orientation: portrait) {
+	#Home {
+		height: unset;
+		max-height: unset;
+		padding-bottom: 2em;
+	}
+	#Home .background {
+		flex-flow: column;
+	}
+	#Home .background>* {
+		width: 100%;
+		height: 50%;
+	}
+	#Home .pageContent {
+		position: relative;
+		flex-flow: column;
+		justify-content: flex-start;
+	}
+	#HomeLeft, #HomeRight {
+		height: unset;
+	}
+	#HomeLeft {
+		padding-top: 4em;
+		width: 100vw;
+		max-width: unset;
+		align-items: center;
+		text-align: center;
+		order: 0;
+		background-image: linear-gradient( to bottom right, #00609B, #103F69);
+		transform: rotate(-1deg) scale(1.075);
+	}
+	#HomeLeft>*:not(button) {
+		margin-bottom: 1em !important;
+	}
+	#phone_mockup {
+		order: 1;
+	}
+	#Home h2 {
+		margin-bottom: 0;
+	}
+	#HomeRight {
+		height: unset;
+		flex-flow: column;
+		justify-content: center;
+		align-items: center;
+		padding: 2em 1em 0 1em;
+		order: 0;
+		width: 100%;
+		max-width: 344px;
+	}
+	.HomeRightTop {
+		padding: 0 0 1em 0 !important;
+		width: 100%;
+	}
+	.appStoreBadges {
+		width: 100%;
+		flex-flow: row !important;
+		align-items: center;
+		justify-content: center;
+	}
+	.appStoreBadges a:nth-of-type(1) .appBadge {
+		padding-right: 1em;
+	}
+	.appStoreBadges .appBadge {
+		max-height: 3em;
+		max-width: 45vw;
+		width: unset !important;
+	}
+	#Home .background .left {
+		display: none;
+	}
+	#Home .background .right {
+		height: 100vh;
+	}
+}

@@ -1,0 +1,164 @@
+.Register {
+  width: 100vw;
+  padding: 2em;
+  padding-top: 3em;
+  background-image: linear-gradient( to bottom right, #00609B, #103F69);
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.Register>* {
+  min-height: 600px;
+  width: 50%;
+  max-width: 600px;
+  text-align: center;
+  color: white;
+  padding: 2em;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-evenly;
+}
+
+.Register .left section, .Register .right form {
+  flex-grow: 1;
+  height: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.Register .left section .winImg {
+  height: 8em;
+}
+
+.Register .left section div {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+}
+
+.Register .left section div p:not(:nth-last-of-type(1)) {
+  margin-bottom: 2em;
+}
+
+.Register .left section button {
+  color: white;
+  text-transform: uppercase;
+  border-radius: 2em;
+}
+
+.Register .left section button:hover {
+  transition: background-color color .4s ease;
+  background-color: white;
+  color: #00609B;
+}
+
+.Register .right form fieldset {
+  border: 1px solid red;
+  flex-grow: 1;
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+}
+
+.Register .right form h2 {
+  font-size: 2em;
+}
+
+.Register .right form h3 {
+  font-weight: 300;
+  font-size: 1.3em;
+}
+
+.Register .right form .inputField, .Register .right form .inputCheckbox {
+  width: 100%;
+  max-width: 400px;
+  background-color: white;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  padding: .5em;
+  border-radius: 5px;
+}
+
+.Register .right form .inputField .inputIcon {
+  width: 2em;
+  height: auto;
+  margin-right: .5em;
+}
+
+#email_icon{
+  margin: .2em .5em .2em 0;
+}
+
+.Register .right form .inputField input[type="text"] {
+  background: none;
+  width: 100%;
+  font-size: 1em;
+}
+
+.Register .right form input:focus {
+  outline: none;
+}
+
+.Register .right form .inputCheckbox label {
+  padding-left: .5em;
+  font-weight: 300;
+}
+
+.Register .right form .inputCheckbox {
+  background: none !important;
+  justify-content: center;
+}
+
+.Register .right form .inputCheckbox input[type="checkbox"] {
+  height: 2em;
+  width: 2em;
+  border-radius: 2em;
+  -webkit-appearance: unset;
+  background-color: white;
+}
+
+.Register .right form .inputCheckbox input[type="checkbox"]:checked {
+  background-image: linear-gradient( to bottom right, #FF512F, #F09819);
+  border: 4px solid white;
+}
+
+.Register .right form button {
+  text-transform: uppercase;
+  color: white;
+  border: none;
+  background-image: linear-gradient( to bottom right, #F09819, #FF512F);
+  min-width: 18em;
+}
+
+.Register .right form button:hover {
+  background-image: linear-gradient( to bottom right, #FF512F, #F09819);
+}
+
+@media only screen and (orientation: portrait) {
+  .Register {
+    flex-flow: column;
+    padding: 1em;
+    padding-top: 3em;
+  }
+  .Register>.left{
+    order: 1;
+  }
+  .Register>* {
+    max-width: 344px;
+    width: 100%;
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width: 340px) {
+  .Register .right form .inputCheckbox label {
+    font-size: .8em;
+  }
+}

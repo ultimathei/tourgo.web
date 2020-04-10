@@ -1,0 +1,45 @@
+	.mediaViewInfo {
+		--web-view-name: LandingPage - Desktop;
+		--web-view-id: LandingPage___Desktop;
+		--web-scale-on-resize: true;
+		--web-enable-deep-linking: true;
+	}
+	:root {
+		--web-view-ids: LandingPage___Desktop;
+	}
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		border: none;
+		font-family: Montserrat, Arial, Sans Serif;
+  }
+  
+	#LandingPage___Desktop {
+		width: 100vw;
+		--web-view-name: LandingPage - Desktop;
+		--web-view-id: LandingPage___Desktop;
+		--web-scale-on-resize: true;
+		--web-enable-deep-linking: true;
+		overflow-x: hidden;
+  }
+
+	h1, h2, h3{
+		text-transform: uppercase;
+	}
+
+	a{
+		text-decoration: none;
+	}
+
+	button{
+		padding: 1em 3em;
+		border-radius: 5px;
+		-webkit-transition: background-color 0.5s ease;
+		transition: background-color 0.5s ease;
+    background: none;
+		border: 1px solid white;
+	}
+	button:focus {
+		outline:0;
+	}

@@ -1,0 +1,327 @@
+#Contact {
+  position: absolute;
+  width: 1920px;
+  height: 493px;
+  left: 0px;
+  top: 3494px;
+  overflow: visible;
+}
+.base_bp {
+  position: absolute;
+  overflow: visible;
+  width: 1920px;
+  height: 493px;
+  left: 0px;
+  top: 0px;
+}
+#aboutus {
+  position: absolute;
+  width: 355px;
+  height: 211px;
+  left: 324px;
+  top: 160px;
+  overflow: visible;
+}
+#p_br {
+  position: absolute;
+  left: 0px;
+  top: 67px;
+  overflow: hidden;
+  width: 356px;
+  height: 144px;
+  text-align: left;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: lighter;
+  font-size: 18px;
+  color: rgba(255,255,255,1);
+}
+#h3 {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  overflow: visible;
+  width: 179px;
+  white-space: nowrap;
+  text-align: left;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  color: rgba(255,255,255,1);
+  letter-spacing: 1px;
+}
+#getintouch {
+  position: absolute;
+  width: 328px;
+  height: 207px;
+  left: 856px;
+  top: 160px;
+  overflow: visible;
+}
+#email_tourgo_co_uk {
+  position: absolute;
+  left: 124px;
+  top: 185px;
+  overflow: visible;
+  width: 176px;
+  white-space: nowrap;
+  text-align: left;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: lighter;
+  font-size: 18px;
+  color: rgba(255,255,255,1);
+}
+#Email {
+  position: absolute;
+  left: 0px;
+  top: 185px;
+  overflow: visible;
+  width: 53px;
+  white-space: nowrap;
+  text-align: left;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  color: rgba(255,255,255,1);
+}
+#_440_875369208 {
+  position: absolute;
+  left: 124px;
+  top: 137px;
+  overflow: visible;
+  width: 149px;
+  white-space: nowrap;
+  text-align: left;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: lighter;
+  font-size: 18px;
+  color: rgba(255,255,255,1);
+}
+#Phone {
+  position: absolute;
+  left: 0px;
+  top: 137px;
+  overflow: visible;
+  width: 59px;
+  white-space: nowrap;
+  text-align: left;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  color: rgba(255,255,255,1);
+}
+#ID66_South_Street_Window_6_Won {
+  position: absolute;
+  left: 124px;
+  top: 67px;
+  overflow: visible;
+  width: 205px;
+  white-space: nowrap;
+  text-align: left;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: lighter;
+  font-size: 18px;
+  color: rgba(255,255,255,1);
+}
+#Address {
+  position: absolute;
+  left: 0px;
+  top: 67px;
+  overflow: visible;
+  width: 74px;
+  white-space: nowrap;
+  text-align: left;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  color: rgba(255,255,255,1);
+}
+#h3_b {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  overflow: visible;
+  width: 249px;
+  white-space: nowrap;
+  text-align: left;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  color: rgba(255,255,255,1);
+  letter-spacing: 1px;
+}
+#smedia {
+  position: absolute;
+  width: 254px;
+  height: 117px;
+  left: 1363px;
+  top: 160px;
+  overflow: visible;
+}
+#fb_icon {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  left: 0px;
+  top: 67px;
+  overflow: visible;
+}
+.Ellipse_74 {
+  position: absolute;
+  overflow: visible;
+  width: 50px;
+  height: 50px;
+  left: 0px;
+  top: 0px;
+}
+#facebook {
+  position: absolute;
+  width: 15.138px;
+  height: 28px;
+  left: 16.154px;
+  top: 10.734px;
+  overflow: visible;
+}
+.Path_985 {
+  overflow: visible;
+  position: absolute;
+  width: 15.138px;
+  height: 28px;
+  left: 0px;
+  top: 0px;
+  transform: matrix(1,0,0,1,0,0);
+}
+#yt_icon {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  left: 102px;
+  top: 67px;
+  overflow: visible;
+}
+.Ellipse_74_b {
+  position: absolute;
+  overflow: visible;
+  width: 50px;
+  height: 50px;
+  left: 0px;
+  top: 0px;
+}
+#youtube_logotype {
+  position: absolute;
+  width: 25.324px;
+  height: 30px;
+  left: 12px;
+  top: 9px;
+  overflow: visible;
+}
+#Group_551 {
+  position: absolute;
+  width: 25.324px;
+  height: 30px;
+  left: 0px;
+  top: 0px;
+  overflow: visible;
+}
+.Path_986 {
+  overflow: visible;
+  position: absolute;
+  width: 25.324px;
+  height: 17.651px;
+  left: 0px;
+  top: 12.349px;
+  transform: matrix(1,0,0,1,0,0);
+}
+.Path_987 {
+  overflow: visible;
+  position: absolute;
+  width: 1.53px;
+  height: 1.953px;
+  left: 20.377px;
+  top: 19.243px;
+  transform: matrix(1,0,0,1,0,0);
+}
+.Path_988 {
+  overflow: visible;
+  position: absolute;
+  width: 1.429px;
+  height: 5.897px;
+  left: 14.702px;
+  top: 19.243px;
+  transform: matrix(1,0,0,1,0,0);
+}
+.Path_989 {
+  overflow: visible;
+  position: absolute;
+  width: 4.447px;
+  height: 8.653px;
+  left: 15.187px;
+  top: 2.918px;
+  transform: matrix(1,0,0,1,0,0);
+}
+.Path_990 {
+  overflow: visible;
+  position: absolute;
+  width: 5.927px;
+  height: 11.454px;
+  left: 3.404px;
+  top: 0px;
+  transform: matrix(1,0,0,1,0,0);
+}
+.Path_991 {
+  overflow: visible;
+  position: absolute;
+  width: 4.569px;
+  height: 8.756px;
+  left: 9.345px;
+  top: 2.815px;
+  transform: matrix(1,0,0,1,0,0);
+}
+#twt_icon {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  left: 204px;
+  top: 67px;
+  overflow: visible;
+}
+.twitter {
+  overflow: visible;
+  position: absolute;
+  width: 24.936px;
+  height: 20.408px;
+  left: 12.938px;
+  top: 15.004px;
+  transform: matrix(1,0,0,1,0,0);
+}
+.Ellipse_74_ci {
+  position: absolute;
+  overflow: visible;
+  width: 50px;
+  height: 50px;
+  left: 0px;
+  top: 0px;
+}
+#h3_cj {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  overflow: visible;
+  width: 255px;
+  white-space: nowrap;
+  text-align: left;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  color: rgba(255,255,255,1);
+  letter-spacing: 1px;
+}

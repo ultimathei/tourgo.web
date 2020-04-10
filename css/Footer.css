@@ -1,0 +1,137 @@
+footer{
+  width: 100vw;
+  background-color: rgb(37, 37, 37);
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer *{
+  color: white;
+}
+
+footer a:hover{
+  color: #F09819;
+}
+
+footer .footerContent {
+  flex-grow: 1;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  padding: 4em 2em;
+}
+
+footer .footerContent section{
+  width: 30%;
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+}
+footer h4{
+  font-weight: 600;
+  width: 6em;
+  margin-bottom: .5em;
+}
+
+footer .footerContent section div{
+  font-size: .8em;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  margin-bottom: 1em;
+}
+
+footer h3{
+  font-size: 1em;
+  font-weight: 400;
+  margin-bottom: 2em;
+}
+
+footer p{
+  font-weight: 300;
+  font-size: .8em;
+}
+
+footer .socialLinks{
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+footer .socialLinks a:not(:nth-last-of-type(1)){
+  margin-right: 2em;
+}
+footer .socialLinks a{
+  width: 4em;
+  height: 4em;
+  border-radius: 2em;
+}
+
+footer .socialLinks a svg{
+  fill: white;
+  height: 100%;
+  width: 100%;
+}
+footer .socialLinks a svg>g:first-of-type{
+  stroke: white;
+}
+
+footer .socialLinks a:hover svg{
+  fill: #F09819;
+}
+
+footer .socialLinks a:hover svg>g:first-of-type{
+  stroke: #F09819;
+}
+
+.footNote{
+  width: 100%;
+  background-color: black;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: 300;
+  font-size: .8em;
+}
+.footNote>*{
+  margin: 1em;
+}
+
+@media only screen and (orientation: portrait){
+  .footerContent section:first-of-type{
+    flex-basis: 100%;
+    margin-bottom: 2em;
+  }
+  .footerContent section:not(:first-of-type){
+    flex-basis: 50%;
+  }
+  .footerContent section:nth-of-type(2){
+    padding-right: 1em;
+  }
+  footer .footerContent section:not(:last-of-type){
+    margin-bottom: 2em;
+  }
+}
+@media only screen and (max-width: 600px){
+  .footerContent section:nth-of-type(2){
+    flex-basis: 100%;
+    flex-flow: row wrap;
+  }
+  .footerContent section:nth-of-type(2) h3{
+    flex-basis: 100%;
+  }
+}
+@media only screen and (max-width: 500px){
+  .footerContent .socialLinks a{
+    width: 2.5em;
+    height: 2.5em;
+  }
+  footer .socialLinks a:not(:nth-last-of-type(1)){
+    margin-right: .5em;
+  }
+}
