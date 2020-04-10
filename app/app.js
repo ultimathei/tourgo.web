@@ -6,15 +6,16 @@
 $(document).ready(function () {
   //toggle header visibility on scroll
   toggleHeader();
+  formBtnClicked();
+  aboutCarouselActions();
 
-  //Scroll to form on button click
-  $(".goToFormBtn").click(function () {
-    $('html, body').animate({
-      scrollTop: $(".Register").offset().top
-    }, 1000);
+});
 
-  });
+/* FUNCTIONS ********************************/
 
+function aboutCarouselActions() {
+  console.log("works?");
+  
   //about carousel
   $(".aboutCarouselButtons button").click(function () {
     if ($(this).hasClass("active")) {
@@ -30,10 +31,16 @@ $(document).ready(function () {
       marginLeft: (-100 * $(this).index()) + "vw"
     })
   });
+}
 
-});
-
-/* FUNCTIONS ********************************/
+//Scroll to form on button click
+function formBtnClicked() {
+  $(".goToFormBtn").click(function () {
+    $('html, body').animate({
+      scrollTop: $(".Register").offset().top
+    }, 1000);
+  });
+}
 
 //toggle header visibility on scroll
 function toggleHeader() {
