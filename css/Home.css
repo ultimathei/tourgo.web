@@ -11,11 +11,6 @@
 	background-image: linear-gradient( to bottom right, #FF512F, #F09819);
 }
 
-#Home .Logo {
-	width: 100%;
-	max-width: 300px;
-}
-
 #Home h1 {
 	font-size: 1.8em;
 	margin-bottom: .2em;
@@ -100,7 +95,9 @@
 }
 
 #HomeLeft>.Logo {
-	margin-bottom: 5em;
+	width: 100%;
+	max-width: 300px;
+	margin-bottom: 10vh;
 }
 
 #HomeLeft h2 {
