@@ -96,8 +96,7 @@
   margin: .2em .5em .2em 0;
 }
 
-.Register .right form .inputField input[type="text"],
-.Register .right form .inputField input[type="password"] {
+.Register .right form .inputField input:not([type="checkbox"]){
   background: none;
   width: 100%;
   font-size: 1em;
