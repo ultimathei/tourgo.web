@@ -121,7 +121,6 @@
 .Register .right form .inputCheckbox input[type="checkbox"] {
   height: 2em;
   width: 2em;
-  border-radius: 2em;
   -webkit-appearance: unset;
   background-color: white;
 }
