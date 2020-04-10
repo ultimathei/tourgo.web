@@ -13,23 +13,30 @@ $(document).ready(function () {
       scrollTop: $(".Register").offset().top
     }, 1000);
 
+  });
 
   //about carousel
-  $(".aboutCarouselButtons button").click(function(){
-    console.log("clicked");
-    
-  });
-  
-  });
+  $(".aboutCarouselButtons button").click(function () {
+    if ($(this).hasClass("active")) {
+      return
+    }
 
+    //add class active to clicked element
+    $(".aboutCarouselButtons button").removeClass("active");
+    $(this).addClass("active");
 
+    //animate to selected section
+    $(".aboutSections").animate({
+      marginLeft: (-100 * $(this).index()) + "vw"
+    })
+  });
 
 });
 
 /* FUNCTIONS ********************************/
 
 //toggle header visibility on scroll
-function toggleHeader(){
+function toggleHeader() {
   //Hide Header on scroll down
   var didScroll;
   var lastScrollTop = 0;
@@ -51,7 +58,7 @@ function toggleHeader(){
 
 
   function hasScrolled() {
-    var st = $(this).scrollTop();    
+    var st = $(this).scrollTop();
 
     // Make sure they scroll more than delta
     if (Math.abs(lastScrollTop - st) <= delta)
