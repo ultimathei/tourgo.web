@@ -1,6 +1,7 @@
 header{
   position: fixed;
   top: 0;
+  transition: top 0.2s ease-in-out;
   left: 0;
   width: 100%;
   height: 5em;
@@ -11,7 +12,6 @@ header{
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
-  display: none;
 }
 header .Logo{
   height: 2em;
@@ -22,4 +22,14 @@ header button{
   background-color: white;
   border: none;
   color: #103F69;
+}
+
+.nav-up {
+  top: -5em;
+}
+
+@media only screen and (max-width: 500px){
+  header button {
+    padding: 1em !important;
+  }
 }
