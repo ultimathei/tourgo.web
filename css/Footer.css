@@ -103,20 +103,47 @@ footer .socialLinks a:hover svg>g:first-of-type{
 }
 
 @media only screen and (orientation: portrait){
-  .footerContent section:first-of-type{
-    flex-basis: 100%;
-    margin-bottom: 2em;
+  .footerContent{
+    flex-flow: column !important;
+    width: 400px !important;
   }
-  .footerContent section:not(:first-of-type){
-    flex-basis: 50%;
-  }
-  .footerContent section:nth-of-type(2){
-    padding-right: 1em;
+  .footerContent section{
+    width: 100% !important;
+    justify-content: center;
+    align-items: center;
   }
   footer .footerContent section:not(:last-of-type){
     margin-bottom: 2em;
   }
+  .footerContent section div{
+    width: 100%;
+    justify-content: space-between !important;
+  }
+  footer .footerContent section:first-of-type p{
+    text-align: center;
+  }
+  footer address {
+    text-align: right;
+  }
+
+  /*
+  .footerContent section:first-of-type{
+    flex-basis: 100%;
+    margin-bottom: 2em;
+  }
+  .footerContent section:last-of-type{
+    width: unset;
+  }
+  .footerContent section:nth-of-type(2){
+    padding-right: 1em;
+    flex-basis: 50%;
+  }
+  footer .footerContent section:not(:last-of-type){
+    margin-bottom: 2em;
+  }
+  */
 }
+/*
 @media only screen and (max-width: 600px){
   .footerContent section:nth-of-type(2){
     flex-basis: 100%;
@@ -135,3 +162,4 @@ footer .socialLinks a:hover svg>g:first-of-type{
     margin-right: .5em;
   }
 }
+*/
