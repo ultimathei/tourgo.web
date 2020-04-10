@@ -4,9 +4,32 @@
  */
 
 $(document).ready(function () {
+  //toggle header visibility on scroll
+  toggleHeader();
+
+  //Scroll to form on button click
+  $(".goToFormBtn").click(function () {
+    $('html, body').animate({
+      scrollTop: $(".Register").offset().top
+    }, 1000);
+
+
+  //about carousel
+  $(".aboutCarouselButtons button").click(function(){
+    console.log("clicked");
+    
+  });
+  
+  });
 
 
 
+});
+
+/* FUNCTIONS ********************************/
+
+//toggle header visibility on scroll
+function toggleHeader(){
   //Hide Header on scroll down
   var didScroll;
   var lastScrollTop = 0;
@@ -28,10 +51,7 @@ $(document).ready(function () {
 
 
   function hasScrolled() {
-    var st = $(this).scrollTop();
-
-    //if(st <= (window.innerHeight / 2)) console.log("now!");
-    
+    var st = $(this).scrollTop();    
 
     // Make sure they scroll more than delta
     if (Math.abs(lastScrollTop - st) <= delta)
@@ -51,19 +71,4 @@ $(document).ready(function () {
 
     lastScrollTop = st;
   }
-
-
-
-
-
-  //Scroll to form on button click
-  $(".goToFormBtn").click(function () {
-    $('html, body').animate({
-      scrollTop: $(".Register").offset().top
-    }, 1000);
-  });
-
-
-
-});
-
+}
