@@ -7,11 +7,18 @@ $(document).ready(function () {
   formBtnHandler();
   aboutCarouselHandler();
   toggleVideoPlayer();
+  ruleBtnHandler();
 });
 
 /******************************************** 
 * FUNCTIONS *********************************
 ********************************************/
+//rules button handlers
+function ruleBtnHandler(){
+  $(".rulesBtn, .rulesBackBtn").click(function(){
+    $(".Register .left section").toggleClass("hiddenElement");
+  });
+}
 
 //toggle video player visibility
 function toggleVideoPlayer(){

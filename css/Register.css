@@ -21,9 +21,15 @@
   justify-content: space-evenly;
 }
 
+.Register .left{
+  flex-flow: row nowrap;
+}
+.Register .left section{
+
+}
+
 .Register .left section, .Register .right form {
   flex-grow: 1;
-  height: 100%;
   display: flex;
   flex-flow: column nowrap;
   justify-content: space-evenly;
@@ -40,6 +46,9 @@
   justify-content: space-between;
 }
 
+.Register .left section div p{
+  font-weight: 300;
+}
 .Register .left section div p:not(:nth-last-of-type(1)) {
   margin-bottom: 2em;
 }
@@ -155,6 +164,12 @@
     max-width: 344px;
     width: 100%;
     padding: 0;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .Register .left section div p{
+    font-size: .8em;
   }
 }
 
