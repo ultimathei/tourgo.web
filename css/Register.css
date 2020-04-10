@@ -106,6 +106,9 @@
   bottom: -1.5em;
   font-weight: 300;
   color: #FF512F;
+  padding: 0 1em;
+  background-color: #FF512F ;
+	color: white;
 }
 
 #email_icon {
