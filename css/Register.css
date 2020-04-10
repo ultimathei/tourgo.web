@@ -21,12 +21,11 @@
   justify-content: space-evenly;
 }
 
-.Register .left{
+.Register .left {
   flex-flow: row nowrap;
 }
-.Register .left section{
 
-}
+.Register .left section {}
 
 .Register .left section, .Register .right form {
   flex-grow: 1;
@@ -46,9 +45,10 @@
   justify-content: space-between;
 }
 
-.Register .left section div p{
+.Register .left section div p {
   font-weight: 300;
 }
+
 .Register .left section div p:not(:nth-last-of-type(1)) {
   margin-bottom: 2em;
 }
@@ -92,21 +92,27 @@
   align-items: center;
   padding: .5em;
   border-radius: 5px;
+  position: relative;
 }
 
 .Register .right form .inputField .inputIcon {
-  width: 2em;
+  width: 1.5em;
   height: auto;
   margin-right: .5em;
 }
 
-#email_icon{
+.Register .right form .inputField .errorMsg {
+  position: absolute;
+  bottom: -1.5em;
+  font-weight: 300;
+  color: #FF512F;
+}
+
+#email_icon {
   margin: .2em .5em .2em 0;
 }
 
-.Register .right form .inputField input[type="text"],
-.Register .right form .inputField input[type="password"],
-.Register .right form .inputField input[type="email"] {
+.Register .right form .inputField input[type="text"], .Register .right form .inputField input[type="password"], .Register .right form .inputField input[type="email"] {
   background: none;
   width: 100%;
   font-size: 1em;
@@ -157,7 +163,7 @@
     padding: 1em;
     padding-top: 3em;
   }
-  .Register>.left{
+  .Register>.left {
     order: 1;
   }
   .Register>* {
@@ -168,7 +174,7 @@
 }
 
 @media only screen and (max-width: 1000px) {
-  .Register .left section div p{
+  .Register .left section div p {
     font-size: .8em;
   }
 }

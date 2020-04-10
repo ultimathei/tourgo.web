@@ -51,3 +51,13 @@ button:focus {
 .hiddenElement {
 	display: none !important;
 }
+
+::-moz-selection{
+	background-color: #FF512F ;
+	color: white;
+}
+
+::selection {
+	background-color: #FF512F ;
+	color: white;
+}
