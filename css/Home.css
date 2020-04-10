@@ -100,9 +100,8 @@
 	margin-bottom: 10vh;
 }
 
-
 @keyframes fadeinFromLeft {
-  0% {
+	0% {
 		opacity: 0;
 		left: -100%;
 	}
@@ -115,15 +114,15 @@
 	}
 }
 
-#HomeLeft h1{
+#HomeLeft h1 {
 	position: relative;
 	opacity: 0;
 	left: -100%;
-	animation: fadeinFromLeft 1s ease-out forwards; 
+	animation: fadeinFromLeft 1s ease-out forwards;
 }
 
 @keyframes fadeinFromRight {
-  0% {
+	0% {
 		opacity: 0;
 		right: -100%;
 	}
@@ -142,7 +141,7 @@
 	max-width: 300px;
 	opacity: 0;
 	right: -100%;
-	animation: fadeinFromRight 1s ease-out forwards; 
+	animation: fadeinFromRight 1s ease-out forwards;
 	animation-delay: .5s;
 }
 
@@ -195,7 +194,7 @@
 }
 
 @keyframes popScale {
-  0% {
+	0% {
 		opacity: 0;
 		transform: scale(0.75);
 	}
@@ -260,6 +259,15 @@
 	flex-flow: column;
 }
 
+#HomeRight>p {
+	color: black;
+	font-weight: 400;
+	text-transform: lowercase;
+	width: 9em;
+	text-align: center;
+	padding-top: .5em;
+}
+
 #HomeRight .appBadge {
 	width: 9em;
 }
@@ -272,8 +280,9 @@
 	width: auto;
 	max-height: 600px;
 }
+
 @keyframes fadeinFromBottom {
-  0% {
+	0% {
 		opacity: 0;
 		bottom: -25%;
 	}
@@ -286,6 +295,7 @@
 		bottom: 0;
 	}
 }
+
 #phone_mockup>img {
 	position: relative;
 	height: 100%;
@@ -345,12 +355,12 @@
 }
 
 @media only screen and (orientation: landscape) and (max-width: 760px) {
-	#HomeLeft h1{
+	#HomeLeft h1 {
 		font-size: 1em;
 	}
-  #HomeRight button svg{
-    display: none;
-  }
+	#HomeRight button svg {
+		display: none;
+	}
 }
 
 @media only screen and (orientation: portrait) {

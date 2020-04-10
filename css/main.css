@@ -1,4 +1,6 @@
-	.mediaViewInfo {
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+.mediaViewInfo {
 		--web-view-name: LandingPage - Desktop;
 		--web-view-id: LandingPage___Desktop;
 		--web-scale-on-resize: true;
@@ -12,7 +14,7 @@
 		padding: 0;
 		box-sizing: border-box;
 		border: none;
-		font-family: Montserrat, Arial, Sans Serif;
+		font-family: 'Montserrat', sans-serif;
   }
 
 	#LandingPage___Desktop {
