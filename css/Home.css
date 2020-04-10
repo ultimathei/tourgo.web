@@ -256,7 +256,7 @@
 
 @media only screen and (max-width: 892px) {
 	#Home button {
-		padding: 1em !important;
+		padding: 1em 0.6em !important;
 	}
 }
 
@@ -268,33 +268,13 @@
 }
 
 @media only screen and (orientation: landscape) and (max-width: 760px) {
-	#HomeRight .HomeRightTop button svg {
-		margin: 0.3em;
+	#HomeLeft h1{
+		font-size: 1em;
 	}
+  #HomeRight button svg{
+    display: none;
+  }
 }
-
-
-/*
-@media only screen and (orientation: portrait) and (min-width:700px) {
-	.pageContent{
-		transform: unset;
-		align-items: flex-start !important;
-	}
-	#HomeLeft{
-		transform: unset !important;
-		text-align: left  !important;
-		align-items: start !important;
-		max-width: unset !important;
-	}
-	#phone_mockup{
-		position: absolute !important;
-		right: 0;
-		height: 525px !important;
-	}
-}
-
-*/
-
 
 @media only screen and (orientation: portrait) {
 	#Home {

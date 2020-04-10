@@ -133,3 +133,9 @@ footer .socialLinks a:hover svg>g:first-of-type{
     height: 3em;
   }
 }
+@media only screen and (orientation: landscape) and (max-width: 570px){
+  footer .socialLinks a{
+    width: 2.5em;
+    height: 2.5em;
+  }
+}
