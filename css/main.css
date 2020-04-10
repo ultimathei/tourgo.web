@@ -44,3 +44,7 @@
 	button:focus {
 		outline:0;
 	}
+
+	.hiddenElement{
+		display: none !important;
+	}

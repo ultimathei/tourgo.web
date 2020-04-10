@@ -62,7 +62,7 @@
 	color: white;
 }
 
-.watchVideoBtn{
+#LandingPage___Desktop>.watchVideoBtn{
 	display: flex;
 	flex-flow: row nowrap;
 	justify-content: center;
@@ -78,14 +78,14 @@
 	position: absolute;
 	left: 50%;
 }
-.watchVideoBtn>*{
+#LandingPage___Desktop>.watchVideoBtn>*{
 	margin: 0 .5em;
 }
-.watchVideoBtn svg{
+#LandingPage___Desktop>.watchVideoBtn svg{
 	fill: white;
 	height: 2em;
 }
-.watchVideoBtn:hover{
+#LandingPage___Desktop>.watchVideoBtn:hover{
 	background-image: linear-gradient( to bottom right, #F09819, #FF512F);
 }
 

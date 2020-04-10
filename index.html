@@ -7,6 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>TOURGO LandingPage Prototype</title>
 	<link rel="stylesheet" type="text/css" href="./css/main.css">
+	<link rel="stylesheet" type="text/css" href="./css/VideoPlayer.css">
 	<link rel="stylesheet" type="text/css" href="./css/Header.css">
 	<link rel="stylesheet" type="text/css" href="./css/Home.css">
 	<link rel="stylesheet" type="text/css" href="./css/About.css">
@@ -22,6 +23,14 @@
 		<button class="goToFormBtn">Sign Up and Win</button>
 	</header>
 	<div id="LandingPage___Desktop">
+		<div class="videoPlayer hiddenElement">
+			<button class="closeVideoPlayerBtn">X</button>
+			<video width="320" height="240" controls>
+				<source src="movie.mp4" type="video/mp4">
+				<source src="movie.ogg" type="video/ogg">
+				Your browser does not support the video tag.
+			</video>
+		</div>
 		<div id="Home">
 			<div class="pageContent">
 				<div id="HomeLeft">
@@ -31,7 +40,7 @@
 						<h2>Pick from tons of cool things to do
 							and reach ever-increasing discounts.</h2>
 					</div>
-					<button>
+					<button class="watchVideoBtn">
 						<svg class="videoIcon" xmlns="http://www.w3.org/2000/svg" width="31.22" height="31.204"
 							viewBox="0 0 31.22 31.204">
 							<g id="Group_70" data-name="Group 70" transform="translate(10.534 7.216)">

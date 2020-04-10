@@ -2,21 +2,27 @@
  * APPLICATION ENGINE
  * using jQuery javascript library
  */
-
 $(document).ready(function () {
-  //toggle header visibility on scroll
-  toggleHeader();
-  formBtnClicked();
-  aboutCarouselActions();
-
+  toggleHeaderHandler();
+  formBtnHandler();
+  aboutCarouselHandler();
+  toggleVideoPlayer();
 });
 
-/* FUNCTIONS ********************************/
+/******************************************** 
+* FUNCTIONS *********************************
+********************************************/
 
-function aboutCarouselActions() {
-  console.log("works?");
-  
-  //about carousel
+//toggle video player visibility
+function toggleVideoPlayer(){
+  $(".watchVideoBtn, .closeVideoPlayerBtn").click(function(){
+    console.log("clicked");
+    $(".videoPlayer").toggleClass("hiddenElement");
+  })
+}
+
+//slide carousel to correct position
+function aboutCarouselHandler() {
   $(".aboutCarouselButtons button").click(function () {
     if ($(this).hasClass("active")) {
       return
@@ -34,7 +40,7 @@ function aboutCarouselActions() {
 }
 
 //Scroll to form on button click
-function formBtnClicked() {
+function formBtnHandler() {
   $(".goToFormBtn").click(function () {
     $('html, body').animate({
       scrollTop: $(".Register").offset().top
@@ -43,7 +49,7 @@ function formBtnClicked() {
 }
 
 //toggle header visibility on scroll
-function toggleHeader() {
+function toggleHeaderHandler() {
   //Hide Header on scroll down
   var didScroll;
   var lastScrollTop = 0;
