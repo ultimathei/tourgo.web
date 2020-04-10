@@ -104,9 +104,10 @@
 .Register .right form .inputField .errorMsg {
   position: absolute;
   bottom: -1.5em;
+  left: 0;
   font-weight: 300;
   color: #FF512F;
-  padding: 0 1em;
+  padding: 0 .5em;
   background-color: #FF512F ;
 	color: white;
 }
