@@ -82,7 +82,7 @@
   font-size: 1.3em;
 }
 
-.Register .right form .inputField, .Register .right form .inputCheckbox {
+.inputField, .inputCheckbox {
   width: 100%;
   max-width: 400px;
   background-color: white;
@@ -108,18 +108,50 @@
   font-weight: 300;
   color: #FF512F;
   padding: 0 .5em;
-  background-color: #FF512F ;
-	color: white;
+  background-color: #FF512F;
+  color: white;
 }
 
 #email_icon {
   margin: .2em .5em .2em 0;
 }
 
+/*EXPERIMENTING*/
+.Register .right form .formHead{
+  perspective: 1000px;
+  position: relative;
+}
+
 .Register .right form .inputField input[type="text"], .Register .right form .inputField input[type="password"], .Register .right form .inputField input[type="email"] {
   background: none;
   width: 100%;
   font-size: 1em;
+}
+
+.Register .right form .formHead .legend {
+  transform: rotate3d(0, 0, 0, 0deg);
+  transition: transform .3s ease-out .3s;
+}
+
+.Register .right form .formHead:hover .legend {
+  transform: rotate3d(0, 1, 0, -90deg);
+  transition: transform .3s ease-in;
+}
+
+.Register .right form .formHead .test {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #FF512F;
+  border-radius: 5px;
+  transform: rotate3d(0, 1, 0, 90deg);
+  transition: transform .3s ease-out;
+}
+
+.Register .right form  .formHead:hover .test {
+  transform: rotate3d(0, 0, 0, 0deg);
+  transition: transform .3s ease-in .3s;
 }
 
 .Register .right form input:focus {

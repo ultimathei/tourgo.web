@@ -242,16 +242,30 @@
 	margin: .3em;
 }
 
+.HomeRightTop>*{
+	margin: 0.5em 0 !important;
+}
+
+.HomeRightTop .inputField input{
+	width: 100%;
+}
+
+.HomeRightTop .inputField input:focus{
+	outline: none;
+}
+
+/*
 #HomeRight .HomeRightTop button svg {
 	fill: white;
 	height: 2em;
 	width: auto;
 	margin: .5em 1em;
 }
-
+*/
 #HomeRight .HomeRightTop button:hover {
 	background-image: linear-gradient( to bottom right, rgb(0, 135, 219), #00609B);
 	color: #103F69;
+	cursor: pointer;
 }
 
 #HomeRight .appStoreBadges {
@@ -259,18 +273,16 @@
 	flex-flow: column;
 }
 
-#HomeRight>p {
-	color: black;
+.HomeRightTop>p {
 	font-weight: 400;
-	text-transform: lowercase;
-	width: 9em;
-	text-align: center;
-	padding-top: .5em;
+	text-transform: none !important;
+	text-align: justify;
 }
-
+/*
 #HomeRight .appBadge {
 	width: 9em;
 }
+*/
 
 /*PHONE MOCKUP*/
 

@@ -1,0 +1,147 @@
+<!--
+<div class="appStoreBadges">
+  <a><img class="appBadge" src="img/png/apple_store_badge.png"
+      srcset="img/png/apple_store_badge.png 1x, img/png/apple_store_badge@2x.png 2x, " /></a>
+  <a><img class="appBadge" src="img/png/google_play_badge.png"
+      srcset="img/png/google_play_badge.png 1x, img/png/google_play_badge@2x.png 2x, " /></a>
+</div>
+<p>* coming soon</p>
+-->
+
+<!--<p class="errorMsg">sample error message</p>-->
+
+
+
+REGISTER
+
+
+		<div class="Register">
+			<div class="left">
+				<section>
+					<img class="winImg" src="./img/png/tourgoers_winners.png" alt="img" />
+					<h2>Win up to £250</h2>
+					<div>
+						<p>TOURGO is running its founding competition!</p>
+						<p>Pre-register and suggest One Challenge for each of our Interest Categories.</p>
+						<p>The best ideas will be rewarded with cash prizes!</p>
+					</div>
+					<button class="rulesBtn">Competition Rules</button>
+				</section>
+				<section class="hiddenElement">
+					<h2>Competition Rules</h2>
+					<div>
+						<p>Each participant can suggest 1 challange for each of TOURGO's 8 interest catgories.
+							Please type the title of the challange and a short description in the box below (max 200 characters).
+						</p>
+						<p>The challange presented for each interest category will be given an individual score (1 to 5)
+							based on the criteria of originality, interest categiry suitability, potential user's involvment.
+							The sum of the individual scores for each interest category will compose the final score attained by each
+							participant.
+						</p>
+						<p>TOURGO's purpose is to offer challanges of different levels of complexity. This means that
+							the intensity of the action required can vary between your suggestions. More difficult does not
+							necessarily mean more points.
+						</p>
+					</div>
+					<button class="rulesBackBtn">Back</button>
+				</section>
+			</div>
+			<div class="right">
+				<form name="registerForm" class="registerForm">
+					<div class="formHead">
+						<div class="legend">
+							<h2>Sign Up now</h2>
+							<h3>and win cash prize</h3>
+						</div>
+						<div class="test">
+							<h2>Oh-oh!</h2>
+							<h3>Name is required!</h3>
+						</div>
+					</div>
+					<div class="inputField">
+						<svg class="inputIcon" id="full_name_icon" xmlns="http://www.w3.org/2000/svg" width="40" height="33.333"
+							viewBox="0 0 40 33.333">
+							<path id="Path_324" data-name="Path 324"
+								d="M35.417,72.668H4.583A4.587,4.587,0,0,1,0,68.085V47.251a4.587,4.587,0,0,1,4.583-4.583h10a1.25,1.25,0,0,1,0,2.5h-10A2.086,2.086,0,0,0,2.5,47.251V68.085a2.086,2.086,0,0,0,2.083,2.083H35.417A2.086,2.086,0,0,0,37.5,68.085V47.251a2.086,2.086,0,0,0-2.083-2.083h-10a1.25,1.25,0,0,1,0-2.5h10A4.587,4.587,0,0,1,40,47.251V68.085A4.587,4.587,0,0,1,35.417,72.668Zm0,0"
+								transform="translate(0 -39.334)" />
+							<path id="Path_325" data-name="Path 325"
+								d="M181.085,9.167h-7.5a2.92,2.92,0,0,1-2.917-2.917V2.917A2.92,2.92,0,0,1,173.585,0h7.5A2.92,2.92,0,0,1,184,2.917V6.25A2.92,2.92,0,0,1,181.085,9.167Zm-7.5-6.667a.417.417,0,0,0-.417.417V6.25a.417.417,0,0,0,.417.417h7.5a.417.417,0,0,0,.417-.417V2.917a.417.417,0,0,0-.417-.417Zm0,0"
+								transform="translate(-157.335)" />
+							<path id="Path_326" data-name="Path 326"
+								d="M110.835,157.665A4.167,4.167,0,1,1,115,153.5,4.172,4.172,0,0,1,110.835,157.665Zm0-5.833A1.667,1.667,0,1,0,112.5,153.5,1.669,1.669,0,0,0,110.835,151.832Zm0,0"
+								transform="translate(-98.334 -137.666)" />
+							<path id="Path_327" data-name="Path 327"
+								d="M77.75,284a1.25,1.25,0,0,1-1.25-1.25v-.833a2.086,2.086,0,0,0-2.083-2.083H68.583a2.086,2.086,0,0,0-2.083,2.083v.833a1.25,1.25,0,1,1-2.5,0v-.833a4.587,4.587,0,0,1,4.583-4.583h5.833A4.587,4.587,0,0,1,79,281.915v.833A1.25,1.25,0,0,1,77.75,284Zm0,0"
+								transform="translate(-59 -255.666)" />
+							<path id="Path_328" data-name="Path 328"
+								d="M309.085,162.5h-9.167a1.25,1.25,0,0,1,0-2.5h9.167a1.25,1.25,0,0,1,0,2.5Zm0,0"
+								transform="translate(-275.335 -147.5)" />
+							<path id="Path_329" data-name="Path 329"
+								d="M309.085,247.832h-9.167a1.25,1.25,0,0,1,0-2.5h9.167a1.25,1.25,0,1,1,0,2.5Zm0,0"
+								transform="translate(-275.335 -226.166)" />
+							<path id="Path_330" data-name="Path 330"
+								d="M309.085,333.168h-9.167a1.25,1.25,0,0,1,0-2.5h9.167a1.25,1.25,0,1,1,0,2.5Zm0,0"
+								transform="translate(-275.335 -304.834)" />
+						</svg>
+						<input type="text" id="fullname" name="fullname" placeholder="Full Name" />
+						<p class="errorMsg">sample error message</p>
+					</div>
+					<div class="inputField">
+						<svg class="inputIcon" id="username_icon" xmlns="http://www.w3.org/2000/svg" width="40" height="40"
+							viewBox="0 0 40 40">
+							<path id="user"
+								d="M34.142,5.858A20,20,0,0,0,5.858,34.142,20,20,0,0,0,34.142,5.858Zm-24.116,28.7a10.127,10.127,0,0,1,19.947,0,17.618,17.618,0,0,1-19.947,0ZM13.641,17.49A6.359,6.359,0,1,1,20,23.849,6.366,6.366,0,0,1,13.641,17.49ZM32,32.936a12.491,12.491,0,0,0-7.261-8.152,8.7,8.7,0,1,0-9.484,0A12.489,12.489,0,0,0,8,32.935a17.656,17.656,0,1,1,24.007,0Zm0,0" />
+						</svg>
+						<input type="text" id="username" name="username" placeholder="Username" />
+						<p class="errorMsg hiddenElement">sample error message</p>
+					</div>
+					<div class="inputField">
+						<svg class="inputIcon" id="email_icon" xmlns="http://www.w3.org/2000/svg" width="40" height="30.403"
+							viewBox="0 0 40 30.403">
+							<path id="message"
+								d="M35.69.5H4.31A4.062,4.062,0,0,0,0,4.246V27.157A4.062,4.062,0,0,0,4.31,30.9H35.69A4.062,4.062,0,0,0,40,27.157V4.246A4.062,4.062,0,0,0,35.69.5Zm0,2.037a2.231,2.231,0,0,1,.287.019L21.39,15.234a2.184,2.184,0,0,1-2.781,0L4.022,2.556a2.232,2.232,0,0,1,.288-.019Zm1.966,24.619a1.853,1.853,0,0,1-1.966,1.709H4.31a1.853,1.853,0,0,1-1.966-1.709V4.246A1.506,1.506,0,0,1,2.365,4L16.953,16.675a4.787,4.787,0,0,0,6.095,0L37.635,4a1.508,1.508,0,0,1,.021.25Zm0,0"
+								transform="translate(0 -0.5)" />
+						</svg>
+
+						<input type="email" id="email" name="email" placeholder="Email" />
+						<p class="errorMsg hiddenElement">sample error message</p>
+					</div>
+					<div class="inputField">
+						<svg class="inputIcon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+							width="40" height="40" viewBox="0 0 40 40">
+							<defs>
+								<clipPath id="clip-path">
+									<rect id="Rectangle_44" data-name="Rectangle 44" width="40" height="40"
+										transform="translate(22 555)" />
+								</clipPath>
+							</defs>
+							<g id="Mask_Group_3" data-name="Mask Group 3" transform="translate(-22 -555)" clip-path="url(#clip-path)">
+								<g id="lock" transform="translate(22 449.329)">
+									<g id="Group_603" data-name="Group 603" transform="translate(0 114.671)">
+										<g id="Group_602" data-name="Group 602">
+											<path id="Path_1030" data-name="Path 1030"
+												d="M35.9,117.107v2.344h1.761v2.173l-.4.428-1.172-1.426H33.393l-1.582,1.753-1.582-1.753H26.871l-.673.9-.673-.9H20.843a11.041,11.041,0,1,0,0,10.172H37.656v1.175H35.9v2.344H40v-17.21Zm-1.46,5.863h.54l1.291,1.57H33.017Zm-6.39,0h1.142l1.418,1.57H26.871Zm9.611,5.485H19.333l-.306.707a8.7,8.7,0,1,1,0-6.9l.306.707H24.35l1.174,1.57H19.453v2.344h18.2Z"
+												transform="translate(0 -114.671)" />
+										</g>
+									</g>
+									<g id="Group_605" data-name="Group 605" transform="translate(3.699 122.201)">
+										<g id="Group_604" data-name="Group 604" transform="translate(0 0)">
+											<path id="Path_1031" data-name="Path 1031"
+												d="M50.861,211.052a3.512,3.512,0,1,0,3.512,3.512A3.515,3.515,0,0,0,50.861,211.052Zm0,4.679a1.168,1.168,0,1,1,1.168-1.168A1.169,1.169,0,0,1,50.861,215.731Z"
+												transform="translate(-47.349 -211.052)" />
+										</g>
+									</g>
+								</g>
+							</g>
+						</svg>
+						<input type="password" id="password" name="password" placeholder="Password" />
+						<p class="errorMsg hiddenElement">sample error message</p>
+					</div>
+					<div class="inputCheckbox">
+						<input type="checkbox" id="likeToCompete" name="likeToCompete" />
+						<label for="likeToCompete">I would like to compete for £250</label>
+					</div>
+					<button class="submitRegistration">Register and Win</button>
+				</form>
+			</div>
+		</div>

@@ -19,9 +19,10 @@ header .Logo{
 
 header button{
   text-transform: uppercase;
-  background-color: white;
+  background-color: #FF5135;
   border: none;
   color: #103F69;
+  color: white;
 }
 
 .nav-up {
