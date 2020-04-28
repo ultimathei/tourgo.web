@@ -42,10 +42,24 @@ button {
 	transition: background-color 0.5s ease;
 	background: none;
 	border: 1px solid white;
+	cursor: pointer;
 }
 
 button:focus {
 	outline: 0;
+}
+
+.inputField, .inputCheckbox {
+  width: 100%;
+  max-width: 400px;
+  background-color: white;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  padding: .5em;
+  border-radius: 5px;
+  position: relative;
 }
 
 .hiddenElement {

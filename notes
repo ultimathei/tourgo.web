@@ -145,3 +145,69 @@ REGISTER
 				</form>
 			</div>
 		</div>
+
+
+
+
+
+<button class="goToFormBtn">Sign Up and Win</button>
+
+		<button class="watchVideoBtn">
+			<svg class="videoIcon" xmlns="http://www.w3.org/2000/svg" width="31.22" height="31.204"
+				viewBox="0 0 31.22 31.204">
+				<g id="Group_70" data-name="Group 70" transform="translate(10.534 7.216)">
+					<g id="Group_69" data-name="Group 69">
+						<path id="Path_320" data-name="Path 320"
+							d="M138.3,92.856a.589.589,0,0,0-.217-.217l-6.759-3.916-.034-.017-6.725-3.865a.589.589,0,0,0-.882.511v15.6a.589.589,0,0,0,.93.48l6.711-3.855,6.759-3.916A.589.589,0,0,0,138.3,92.856Z"
+							transform="translate(-123.68 -84.763)" />
+					</g>
+				</g>
+				<g id="Group_72" data-name="Group 72">
+					<g id="Group_71" data-name="Group 71">
+						<path id="Path_321" data-name="Path 321"
+							d="M15.61,0A15.6,15.6,0,1,0,31.22,15.6,15.606,15.606,0,0,0,15.61,0Zm0,28.307A12.7,12.7,0,1,1,28.321,15.6,12.708,12.708,0,0,1,15.61,28.307Z" />
+					</g>
+				</g>
+			</svg>
+			<p>watch video</p>
+		</button>
+
+		<div class="videoPlayer hiddenElement">
+			<button class="closeVideoPlayerBtn">X</button>
+			<video width="320" height="240" controls>
+				<source src="movie.mp4" type="video/mp4">
+				<source src="movie.ogg" type="video/ogg">
+				Your browser does not support the video tag.
+			</video>
+		</div>
+
+
+
+
+		FUNCTIONS
+
+		/*
+//Scroll to form on button click
+function formBtnHandler() {
+  $(".goToFormBtn").click(function () {
+    $('html, body').animate({
+      scrollTop: $(".Register").offset().top
+    }, 1000);
+  });
+}
+
+//rules button handlers
+function ruleBtnHandler(){
+  $(".rulesBtn, .rulesBackBtn").click(function(){
+    $(".Register .left section").toggleClass("hiddenElement");
+  });
+}
+
+//toggle video player visibility
+function toggleVideoPlayer(){
+  $(".watchVideoBtn, .closeVideoPlayerBtn").click(function(){
+    console.log("clicked");
+    $(".videoPlayer").toggleClass("hiddenElement");
+  })
+}
+*/

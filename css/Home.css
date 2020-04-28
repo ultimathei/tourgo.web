@@ -185,7 +185,6 @@
 }
 
 #HomeRight .HomeRightTop {
-	padding-top: 10vh;
 	flex-grow: 1;
 	display: flex;
 	flex-flow: column;

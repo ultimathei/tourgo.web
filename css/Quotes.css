@@ -1,0 +1,11 @@
+.Quotes{
+  width: 100vw;
+  height: 200px;
+	background-image: linear-gradient( to bottom right, #00609B, #103F69);
+	color: white;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: center;
+	padding: 4em 0;
+}

@@ -1,4 +1,4 @@
-header{
+header {
   position: fixed;
   top: 0;
   transition: top 0.2s ease-in-out;
@@ -13,11 +13,12 @@ header{
   justify-content: space-between;
   align-items: center;
 }
-header .Logo{
+
+header .Logo {
   height: 2em;
 }
 
-header button{
+header button {
   text-transform: uppercase;
   background-color: #FF5135;
   border: none;
@@ -25,11 +26,38 @@ header button{
   color: white;
 }
 
+header .socialLinks {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+header .socialLinks a:not(:nth-last-of-type(1)) {
+  margin-right: .5em;
+}
+
+header .socialLinks a {
+  padding: .5em;
+  border-radius: 2em;
+}
+
+header .socialLinks a>svg {
+  fill: white;
+  height: 100%;
+}
+
+header .socialLinks a>svg:hover {
+  fill: #F09819;
+}
+
+header .socialLinks a>svg:hover>g:first-of-type {
+  stroke: #F09819;
+}
+
 .nav-up {
   top: -5em;
 }
 
-@media only screen and (max-width: 500px){
+@media only screen and (max-width: 500px) {
   header button {
     padding: 1em !important;
   }

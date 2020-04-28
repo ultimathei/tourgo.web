@@ -49,6 +49,7 @@
 	color: #00609B;
 	padding: 0;
 	border-radius: 1em;
+	cursor: pointer;
 }
 
 .aboutCarouselButtons button.active{

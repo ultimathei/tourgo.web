@@ -4,28 +4,20 @@
  */
 $(document).ready(function () {
   toggleHeaderHandler();
-  formBtnHandler();
   aboutCarouselHandler();
-  toggleVideoPlayer();
-  ruleBtnHandler();
+  onClickScrollTo(".watchVideoBtn", ".Intro");
 });
 
 /******************************************** 
 * FUNCTIONS *********************************
 ********************************************/
-//rules button handlers
-function ruleBtnHandler(){
-  $(".rulesBtn, .rulesBackBtn").click(function(){
-    $(".Register .left section").toggleClass("hiddenElement");
+//go to subPage
+function onClickScrollTo(buttonSelector, subPageSelector) {
+  $(buttonSelector).click(function () {
+    $('html, body').animate({
+      scrollTop: $(subPageSelector).offset().top
+    }, 1000);
   });
-}
-
-//toggle video player visibility
-function toggleVideoPlayer(){
-  $(".watchVideoBtn, .closeVideoPlayerBtn").click(function(){
-    console.log("clicked");
-    $(".videoPlayer").toggleClass("hiddenElement");
-  })
 }
 
 //slide carousel to correct position
@@ -43,15 +35,6 @@ function aboutCarouselHandler() {
     $(".aboutSections").animate({
       marginLeft: (-100 * $(this).index()) + "vw"
     })
-  });
-}
-
-//Scroll to form on button click
-function formBtnHandler() {
-  $(".goToFormBtn").click(function () {
-    $('html, body').animate({
-      scrollTop: $(".Register").offset().top
-    }, 1000);
   });
 }
 
