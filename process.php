@@ -12,20 +12,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
 	$mysql_password = "`xE3pp<Pq7u&L@U-";
 	$mysql_database = "tourgoapp";
 
-	$mysqli = new mysqli($mysql_host, $mysql_username, $mysql_password, $mysql_database);
+	$con = mysqli_connect($mysql_host, $mysql_username, $mysql_password, $mysql_database);
 
-	//Output any connection error
-	if($mysqli -> connect_error){
-		die('Error : (' . $mysqli->connect_errno . ') ' .  $mysqli->connect_error);
-	}	
-	
-	//$query = "INSERT INTO tourgoapp user_email VALUES('$u_email', true)"; 
-
-	if($result = $mysqli -> query("INSERT INTO tourgoapp user_email VALUES('$u_email', true)")){
-		echo "Done!";
+	if (mysqli_connect_errno()) {
+		echo "Failed to connect to MySQL: " . mysqli_connect_error();
+		exit();
 	}
-	$result -> free_result();
 
-	$mysqli -> close();
-}
+	// Perform query
+	if ($result = mysqli_query($con, "INSERT INTO user_email VALUES('$u_email', true)")){
+		mysqli_free_result($result);
+	}
+
+	mysqli_close($con);
 ?>
