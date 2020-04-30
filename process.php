@@ -19,7 +19,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
 		die('Error : (' . $mysqli->connect_errno . ') ' .  $mysqli->connect_error);
 	}	
 	
-	$query = "INSERT INTO tourgoapp user_email VALUES('$u_email', true)"; 
-	$result = mysqli_query($mysqli, $query);
+	//$query = "INSERT INTO tourgoapp user_email VALUES('$u_email', true)"; 
+
+	if($result = $mysqli -> query("INSERT INTO tourgoapp user_email VALUES('$u_email', true)")){
+		echo "Done!";
+	}
+	$result -> free_result();
+
+	$mysqli->close();
 }
 ?>
