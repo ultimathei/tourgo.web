@@ -20,7 +20,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
 	}
 
 	// Perform query
-	if ($result = mysqli_query($con, "INSERT INTO user_email VALUES ('$u_email', true)")){
+	if ($result = mysqli_query($con, "INSERT INTO emails VALUES ('$u_email', true)")){
 		mysqli_free_result($result);
 	}
 
