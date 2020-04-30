@@ -1,14 +1,31 @@
 <?php
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
+if ($_SERVER["REQUEST_METHOD"] == "POST"){
 	$u_email = filter_var($_POST["user_email"], FILTER_SANITIZE_EMAIL);
-	if (empty($u_email) || !filter_var($u_email, FILTER_VALIDATE_EMAIL)) {
+	if (empty($u_email) || !filter_var($u_email, FILTER_VALIDATE_EMAIL)){
 		die("Please enter a valid email address!");
 	}
     echo "<p>" . $u_email . "</p>"; //DEBUG STATEMENT
+	
 	//mysql credentials
-	//$mysql_host = "localhost";
-	//$mysql_username = "site"<
-	//$mysql_password = "`xE3pp<Pq7u&L@U-";
-	//$mysql_database = "tourgoapp";
+	$mysql_host = "localhost";
+	$mysql_username = "site"<
+	$mysql_password = "`xE3pp<Pq7u&L@U-";
+	$mysql_database = "tourgoapp";
+
+	$mysqli = new mysqli($mysql_host, $mysql_username, $mysql_password, $mysql_database);
+
+	//Output any connection error
+	if($mysqli->connect_error){
+		die('Error : (' . $mysqli->connect_errno . ') ' .  $mysqli->connect_error);
+	}	
+	
+	$statement = $mysqli->prepare("INSERT INTO tourgoapp user_email VALUES('$u_email', true)"); //prepare sql insert query
+	//bind parameters for markers, where (s = string, i = integer, d = double,  b = blob)
+
+	if($statement->execute()){
+		print "Hello!, your email has been saved!";
+	}else{
+		print $mysqli->error; //show mysql error if any
+	}
 }
 ?>
