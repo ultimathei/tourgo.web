@@ -1,5 +1,5 @@
 <?php
-if ($_SERVER["REQUEST METHOD"] == "POST") {
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $u_email = $_POST["user_email"];
     echo "<p>" . $u_email . "</p>";
 	//mysql credentials
