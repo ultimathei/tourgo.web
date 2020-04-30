@@ -1,7 +1,7 @@
 <?php
 if ($_SERVER["REQUEST METHOD"] == "POST") {
     $u_email = $_POST["user_email"];
-    print $u_email;
+    echo "<p>" . $u_email . "</p>";
 	//mysql credentials
 	//$mysql_host = "localhost";
 	//$mysql_username = "site"<
