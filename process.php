@@ -15,7 +15,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
 	$mysqli = new mysqli($mysql_host, $mysql_username, $mysql_password, $mysql_database);
 
 	//Output any connection error
-	if($mysqli->connect_error){
+	if($mysqli -> connect_error){
 		die('Error : (' . $mysqli->connect_errno . ') ' .  $mysqli->connect_error);
 	}	
 	
@@ -26,6 +26,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
 	}
 	$result -> free_result();
 
-	$mysqli->close();
+	$mysqli -> close();
 }
 ?>
