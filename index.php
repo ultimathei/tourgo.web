@@ -103,8 +103,8 @@
 					<div class="featureBubble">Feature three</div>
 					<img id="iphone_X" src="img/png/iphone_X.png" srcset="img/png/iphone_X.png 1x, img/png/iphone_X@2x.png 2x">
 				</div>
-				<form id="HomeRight">
-					<div class="HomeRightTop" method="post" action="process.php">
+				<form id="HomeRight" method="post" action="process.php">
+					<div class="HomeRightTop">
 						<p>Don’t miss the app launch and grab your chance to win a total of
 							£500 with TOURGO launching competition</p>
 						<div class="inputField">
