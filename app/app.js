@@ -4,8 +4,17 @@
  */
 $(document).ready(function () {
   toggleHeaderHandler();
-  aboutCarouselHandler();
+  carouselBtnHandler(".aboutCarouselButtons button", ".aboutSections");
+  carouselBtnHandler(".quoteCarouselButtons button", ".quotesList");
+  carouselStepperHandler(".quoteStepperBtns a", ".quotesList");
   onClickScrollTo(".watchVideoBtn", ".Intro");
+
+  /*
+  //TODO
+  const e = $(".quotesCarousel");
+  e.touch();
+  //e.on('swipe', swipeHandler)
+  */
 });
 
 /******************************************** 
@@ -20,22 +29,54 @@ function onClickScrollTo(buttonSelector, subPageSelector) {
   });
 }
 
+//slide carousel to next/prev item
+function carouselStepperHandler(buttonSelector, moveableSelector) {
+  $(buttonSelector).click(function () {
+    const adder = (this.classList.contains("nextItem")) ? 1 : -1;
+    const carBtns = $(".quoteCarouselButtons button");
+
+    //get index of new active element
+    let i = 0;
+    while (i < carBtns.length) {
+      if (carBtns[i].classList.contains("active")) break;
+      i++;
+    }
+    i += adder;
+    if (i < 0) i = carBtns.length - 1;
+    else if (i >= carBtns.length) i = 0;
+
+    //add class active to clicked element
+    carBtns.removeClass("active");
+    $(carBtns[i]).addClass("active");
+
+    //animate to selected section
+    $(moveableSelector).animate({
+      marginLeft: (-100 * i) + "%"
+    })
+  });
+}
+
 //slide carousel to correct position
-function aboutCarouselHandler() {
-  $(".aboutCarouselButtons button").click(function () {
+function carouselBtnHandler(buttonSelector, moveableSelector) {
+  $(buttonSelector).click(function () {
     if ($(this).hasClass("active")) {
       return
     }
 
     //add class active to clicked element
-    $(".aboutCarouselButtons button").removeClass("active");
+    $(buttonSelector).removeClass("active");
     $(this).addClass("active");
 
     //animate to selected section
-    $(".aboutSections").animate({
-      marginLeft: (-100 * $(this).index()) + "vw"
+    $(moveableSelector).animate({
+      marginLeft: (-100 * $(this).index()) + "%"
     })
   });
+}
+
+//TODO swipe on carousel
+function swipeHandler(event) {
+  console.log("what");
 }
 
 //toggle header visibility on scroll

@@ -19,7 +19,8 @@
 }
 
 .Quotes .quotesCarousel .quotesList{
-	width: 200%;
+	margin-left: 0;
+	width: 400%;
 	height: 100%;
 	display: flex;
 	flex-flow: row nowrap;
@@ -38,9 +39,6 @@
 .Quotes .quotesList li p{
 	max-width: 250px;
 }
-
-
-
 
 /* CONTROLS */
 
@@ -70,7 +68,7 @@
 	cursor: pointer;
 }
 
-.Quotes .quoteStepperBtns a.nextQuote{
+.Quotes .quoteStepperBtns a.nextItem{
 	margin-left: unset;
 	margin-right: 1em;
 }
