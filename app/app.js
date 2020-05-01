@@ -49,6 +49,11 @@ function carouselStepperHandler(buttonSelector, moveableSelector) {
     carBtns.removeClass("active");
     $(carBtns[i]).addClass("active");
 
+    //switch on/off moving animation
+    const items = $(moveableSelector + ">*");
+    items.removeClass("moving");
+    $(items[i]).addClass("moving");
+
     //animate to selected section
     $(moveableSelector).animate({
       marginLeft: (-100 * i) + "%"
@@ -66,6 +71,12 @@ function carouselBtnHandler(buttonSelector, moveableSelector) {
     //add class active to clicked element
     $(buttonSelector).removeClass("active");
     $(this).addClass("active");
+
+    //switch on/off moving animation
+    const i = $(buttonSelector).index(this);
+    const items = $(moveableSelector + ">*");
+    items.removeClass("moving");
+    $(items[i]).addClass("moving");
 
     //animate to selected section
     $(moveableSelector).animate({
