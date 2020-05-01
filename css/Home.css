@@ -181,7 +181,7 @@
 
 #HomeRight {
 	justify-content: space-between;
-	align-items: flex-end;
+	align-items: flex-start;
 }
 
 #HomeRight .HomeRightTop {
@@ -190,6 +190,43 @@
 	flex-flow: column;
 	justify-content: center;
 	align-items: center;
+	font-size: 1em;
+}
+
+#HomeRight .HomeRightTop>div>p{
+	text-align: center;
+}
+
+#HomeRight .HomeRightTop>div>p:nth-of-type(2){
+	font-size: 1.75em;
+}
+#HomeRight .HomeRightTop>div>p:nth-of-type(3){
+	font-size: 1.4em;
+}
+
+#HomeRight .HomeRightTop>div>p span{
+	font-weight: 600;
+	letter-spacing: 1px;
+}
+
+.HomeRightTop>*{
+	margin: 0.5em 0 !important;
+	width: 100%;
+}
+
+.HomeRightTop .inputField{
+	border-radius: .8em;
+}
+
+.HomeRightTop .inputField>input{
+	width: 100%;
+	font-size: .8em;
+	padding: 0 0.5em;
+	font-style: italic;
+}
+
+.HomeRightTop .inputField>input:focus{
+	outline: none;
 }
 
 @keyframes popScale {
@@ -208,8 +245,8 @@
 }
 
 #HomeRight .HomeRightTop button {
-	width: 100%;
 	border: none;
+	border-radius: .6em;
 	transition: background-image 0.5s ease;
 	background-image: linear-gradient( to bottom right, #00609B, #103F69);
 	margin: 0;
@@ -218,7 +255,7 @@
 	align-items: center;
 	justify-content: center;
 	font-size: 1em;
-	padding: 1em;
+	padding: .5em 1em !important;
 	position: relative;
 	opacity: 0;
 	transform: scale(1);
@@ -229,59 +266,51 @@
 #HomeRight .HomeRightTop button p {
 	color: white;
 	font-weight: 400;
-}
-
-#HomeRight .winText {
-	text-transform: none;
-	font-weight: 300 !important;
-	font-size: .8em;
+	white-space: nowrap;
+	text-transform: uppercase !important;
 }
 
 #HomeRight .HomeRightTop button>* {
 	margin: .3em;
 }
 
-.HomeRightTop>*{
-	margin: 0.5em 0 !important;
-}
-
-.HomeRightTop .inputField input{
-	width: 100%;
-}
-
-.HomeRightTop .inputField input:focus{
-	outline: none;
-}
-
-/*
-#HomeRight .HomeRightTop button svg {
-	fill: white;
-	height: 2em;
-	width: auto;
-	margin: .5em 1em;
-}
-*/
 #HomeRight .HomeRightTop button:hover {
 	background-image: linear-gradient( to bottom right, rgb(0, 135, 219), #00609B);
 	color: #103F69;
 	cursor: pointer;
 }
 
-#HomeRight .appStoreBadges {
-	display: flex;
-	flex-flow: column;
+#HomeRight .HomeRightTop .inputCheckbox{
+	background-color: unset !important;
+	font-size: .8em;
+	font-weight: 300;
+	text-align: right;
+	justify-content: center;
 }
 
-.HomeRightTop>p {
+#HomeRight .HomeRightTop .inputCheckbox label{
+	padding-right: 1em;
+}
+
+#HomeRight .HomeRightTop .inputCheckbox input[type="checkbox"] {
+  height: 2em;
+  width: 2em;
+  border-radius: 2em;
+  -webkit-appearance: unset;
+	background-color: white;
+	cursor: pointer;
+}
+
+#HomeRight .HomeRightTop .inputCheckbox input[type="checkbox"]:checked {
+  background-image: linear-gradient( to bottom right, rgb(0, 135, 219), #00609B);
+  border: 4px solid white;
+}
+
+.HomeRightTop p {
 	font-weight: 400;
 	text-transform: none !important;
 	text-align: justify;
 }
-/*
-#HomeRight .appBadge {
-	width: 9em;
-}
-*/
 
 /*PHONE MOCKUP*/
 

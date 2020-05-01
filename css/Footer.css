@@ -1,17 +1,24 @@
-footer{
+footer {
   width: 100vw;
-  background-color: rgb(37, 37, 37);
+  background-image: 
+    url('../img/png/topo_pattern.png'),
+    linear-gradient( 
+      to bottom, #00609B, rgb(0, 0, 0) 75%
+    );
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode: screen;
   display: flex;
   flex-flow: column;
   justify-content: space-between;
   align-items: center;
 }
 
-footer *{
+footer * {
   color: white;
 }
 
-footer a:hover{
+footer a:hover {
   color: #F09819;
 }
 
@@ -25,19 +32,20 @@ footer .footerContent {
   padding: 4em 2em;
 }
 
-footer .footerContent section{
+footer .footerContent section {
   width: 30%;
   display: flex;
   flex-flow: column;
   justify-content: flex-start;
 }
-footer h4{
+
+footer h4 {
   font-weight: 600;
   width: 6em;
   margin-bottom: .5em;
 }
 
-footer .footerContent section div{
+footer .footerContent section div {
   font-size: .8em;
   display: flex;
   flex-flow: row wrap;
@@ -45,51 +53,52 @@ footer .footerContent section div{
   margin-bottom: 1em;
 }
 
-footer h3{
+footer h3 {
   font-size: 1em;
   font-weight: 400;
   margin-bottom: 2em;
 }
 
-footer p{
+footer p {
   font-weight: 300;
   font-size: .8em;
 }
 
-footer .socialLinks{
+footer .socialLinks {
   display: flex;
   flex-flow: row nowrap;
 }
 
-footer .socialLinks a:not(:nth-last-of-type(1)){
+footer .socialLinks a:not(:nth-last-of-type(1)) {
   margin-right: 2em;
 }
-footer .socialLinks a{
+
+footer .socialLinks a {
   width: 4em;
   height: 4em;
   border-radius: 2em;
 }
 
-footer .socialLinks a svg{
+footer .socialLinks a svg {
   fill: white;
   height: 100%;
   width: 100%;
 }
-footer .socialLinks a svg>g:first-of-type{
+
+footer .socialLinks a svg>g:first-of-type {
   stroke: white;
 }
 
-footer .socialLinks a:hover svg{
+footer .socialLinks a:hover svg {
   fill: #F09819;
 }
 
-footer .socialLinks a:hover svg>g:first-of-type{
+footer .socialLinks a:hover svg>g:first-of-type {
   stroke: #F09819;
 }
 
-.footNote{
+.footNote {
   width: 100%;
-  background-color: black;
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
@@ -98,28 +107,29 @@ footer .socialLinks a:hover svg>g:first-of-type{
   font-weight: 300;
   font-size: .8em;
 }
-.footNote>*{
+
+.footNote>* {
   margin: 1em;
 }
 
-@media only screen and (orientation: portrait){
-  .footerContent{
+@media only screen and (orientation: portrait) {
+  .footerContent {
     flex-flow: column !important;
     width: 400px !important;
   }
-  .footerContent section{
+  .footerContent section {
     width: 100% !important;
     justify-content: center;
     align-items: center;
   }
-  footer .footerContent section:not(:last-of-type){
+  footer .footerContent section:not(:last-of-type) {
     margin-bottom: 2em;
   }
-  .footerContent section div{
+  .footerContent section div {
     width: 100%;
     justify-content: space-between !important;
   }
-  footer .footerContent section:first-of-type p{
+  footer .footerContent section:first-of-type p {
     text-align: justify;
   }
   footer address {
@@ -127,14 +137,15 @@ footer .socialLinks a:hover svg>g:first-of-type{
   }
 }
 
-@media only screen and (orientation: landscape) and (max-width: 750px){
-  footer .socialLinks a{
+@media only screen and (orientation: landscape) and (max-width: 750px) {
+  footer .socialLinks a {
     width: 3em;
     height: 3em;
   }
 }
-@media only screen and (orientation: landscape) and (max-width: 570px){
-  footer .socialLinks a{
+
+@media only screen and (orientation: landscape) and (max-width: 570px) {
+  footer .socialLinks a {
     width: 2.5em;
     height: 2.5em;
   }

@@ -1,11 +1,100 @@
 .Quotes{
   width: 100vw;
+	max-width: 1200px;
   height: 400px;
-	background-image: linear-gradient( to bottom right, #00609B, #103F69);
 	color: white;
 	display: flex;
 	flex-flow: column nowrap;
 	justify-content: center;
 	align-items: center;
 	padding: 4em 0;
+}
+
+.Quotes .quotesCarousel{
+	flex-grow: 1;
+	width: 100%;
+	position: relative;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: flex-start;
+	overflow: hidden;
+}
+
+.Quotes .quotesCarousel .quotesList{
+	width: 200vw;
+	display: flex;
+	flex-flow: row nowrap;
+	
+}
+
+.Quotes .quotesList li{
+	width: 100vw;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+
+
+
+/* CONTROLS */
+
+.Quotes .quotesCarousel .quoteCarouselControls{
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.Quotes .quotesCarousel .quoteStepperBtns{
+	width: 100%;
+	flex-grow: 1;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.Quotes .quoteStepperBtns a{
+	margin-left: 1em;
+	padding: 1em;
+	cursor: pointer;
+}
+
+.Quotes .quoteStepperBtns a.nextQuote{
+	margin-left: unset;
+	margin-right: 1em;
+}
+
+.Quotes .quoteCarouselButtons{
+	margin-top: 1em;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.Quotes .quoteCarouselButtons button{
+	width: 2em !important;
+	height: 2em !important;
+	border: 2px solid white;
+	color: white;
+	padding: 0;
+	margin: 0 .5em;
+	border-radius: 1em;
+	cursor: pointer;
+}
+
+.Quotes .quoteCarouselButtons button.active{
+	background-color: white;
+	color: white;
+}
+
+.Quotes .quoteCarouselButtons button:hover:not(.active){
+	background-color: #F09819;
+	border-color: #F09819;
+	color: white;
 }

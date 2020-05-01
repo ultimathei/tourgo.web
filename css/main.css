@@ -35,6 +35,10 @@ a {
 	text-decoration: none;
 }
 
+ul{
+	list-style: none;
+}
+
 button {
 	padding: 1em 3em;
 	border-radius: 5px;
@@ -45,7 +49,8 @@ button {
 	cursor: pointer;
 }
 
-button:focus {
+button:focus, 
+input:focus{
 	outline: 0;
 }
 
