@@ -1,10 +1,14 @@
 .Intro{
   width: 100vw;
-  height: 600px;
 	background-color: white;
 	display: flex;
 	flex-flow: column nowrap;
 	justify-content: center;
 	align-items: center;
-	padding: 4em 0;
+	padding: 0;
+}
+
+#bm{
+	width: 100%;
+	cursor: pointer;
 }
