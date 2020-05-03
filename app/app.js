@@ -14,7 +14,7 @@ $(document).ready(function () {
   //initially display play button
   // -> only trigger fetch on click
   // -> display loader while fetching JSON data
-  $.getJSON('../video/data.json', (data)=>renderIntro(data));
+  $.getJSON('tourgo.web/video/data.json', (data)=>renderIntro(data));
 
   /*
   //TODO
