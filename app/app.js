@@ -14,7 +14,7 @@ $(document).ready(function () {
   //initially display play button
   // -> only trigger fetch on click
   // -> display loader while fetching JSON data
-  $.getJSON('tourgo.web/video/data.json', (data)=>renderIntro(data));
+  $.getJSON('../video/data.json', (data)=>renderIntro(data));
 
   /*
   //TODO
@@ -27,7 +27,7 @@ $(document).ready(function () {
 /******************************************** 
 * FUNCTIONS *********************************
 ********************************************/
-
+//rendering intro animation (lottie svg)
 const renderIntro = (data) => {
   /* Play an animation on each click */
   let iconSkipForward = document.getElementById('bm');
