@@ -10,22 +10,11 @@ $(document).ready(function () {
   onClickScrollTo(".watchVideoBtn", ".Intro");
 
 
-
-  /* Play an animation on each click */
-  let iconSkipForward = document.getElementById('bm');
-
-  let animationSkipForward = bodymovin.loadAnimation({
-    container: iconSkipForward,
-    renderer: 'svg',
-    loop: false,
-    autoplay: false,
-    path: '/video/data.json'
-  });
-
-  iconSkipForward.addEventListener('click', function () {
-    animationSkipForward.play();
-    animationSkipForward.addEventListener('complete', () => animationSkipForward.goToAndStop(0, true));
-  });
+  //TODO
+  //initially display play button
+  // -> only trigger fetch on click
+  // -> display loader while fetching JSON data
+  $.getJSON('/video/data.json', (data)=>renderIntro(data));
 
   /*
   //TODO
@@ -38,6 +27,26 @@ $(document).ready(function () {
 /******************************************** 
 * FUNCTIONS *********************************
 ********************************************/
+
+const renderIntro = (data) => {
+  /* Play an animation on each click */
+  let iconSkipForward = document.getElementById('bm');
+
+  let animationSkipForward = bodymovin.loadAnimation({
+    container: iconSkipForward,
+    renderer: 'svg',
+    loop: false,
+    autoplay: false,
+    //path: '/video/data.json',
+    animationData: data
+  });
+
+  iconSkipForward.addEventListener('click', function () {
+    animationSkipForward.play();
+    animationSkipForward.addEventListener('complete', () => animationSkipForward.goToAndStop(0, true));
+  });
+}
+
 //go to subPage
 function onClickScrollTo(buttonSelector, subPageSelector) {
   $(buttonSelector).click(function () {
