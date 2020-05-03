@@ -6,7 +6,7 @@ let animationSkipForward = bodymovin.loadAnimation({
         renderer: 'svg',
         loop: false,
         autoplay: false,
-        path: './tourgo.web/video/data.json'
+        path: '/video/data.json'
 });
 
   iconSkipForward.addEventListener('click', function() {
