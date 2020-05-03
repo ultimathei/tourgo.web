@@ -16,6 +16,7 @@ $(document).ready(function () {
   // -> display loader while fetching JSON data
   //$.getJSON('../video/data.json', (data) => renderIntro(data));
   renderIntro(getAnimData());
+  
   /*
   //TODO
   const e = $(".quotesCarousel");

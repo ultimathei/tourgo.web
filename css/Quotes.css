@@ -37,6 +37,7 @@
 }
 
 .Quotes .quotesList li p{
+	width: 50vw;
 	max-width: 310px;
 	font-size: 1em;
 }
