@@ -26,14 +26,14 @@ footer .footerContent {
   flex-grow: 1;
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
   width: 100%;
   max-width: 1200px;
   padding: 4em 2em;
 }
 
 footer .footerContent section {
-  width: 30%;
+  max-width: 30%;
   display: flex;
   flex-flow: column;
   justify-content: flex-start;
@@ -119,6 +119,7 @@ footer .socialLinks a:hover svg>g:first-of-type {
   }
   .footerContent section {
     width: 100% !important;
+    max-width: unset !important;
     justify-content: center;
     align-items: center;
   }
