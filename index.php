@@ -23,7 +23,7 @@
 	<header class="nav-up">
 		<img class="Logo" src="./img/svg/MainLOGO.svg" alt="TOURGO logo (coloured)" />
 		<div class="socialLinks">
-			<a href="#" target="_blank">
+			<a href="https://www.facebook.com/Tourgo-APP-108726170790774/?modal=admin_todo_tour" target="_blank">
 				<svg class="fb_icon" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
 					<g id="Ellipse_74" data-name="Ellipse 74" fill="none" stroke="#fff" stroke-width="3">
 						<circle cx="25" cy="25" r="25" stroke="none" />
@@ -35,7 +35,7 @@
 					</g>
 				</svg>
 			</a>
-			<a href="#" target="_blank">
+			<a href="https://www.instagram.com/tourgolondon/" target="_blank">
 				<svg id="insta_icon" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
 					<g id="Ellipse_74" data-name="Ellipse 74" fill="none" stroke="#fff" stroke-width="3">
 						<circle cx="25" cy="25" r="25" stroke="none" />
@@ -92,7 +92,7 @@
 					<div class="featureBubble">Feature one</div>
 					<div class="featureBubble">Feature two</div>
 					<div class="featureBubble">Feature three</div>
-					<img id="iphone_X" src="img/png/iphone_X.png">
+					<img id="iphone_X" src="img/png/iphone_X.png" srcset="img/png/iphone_X.png 1x, img/png/iphone_X@2x.png 2x">
 				</div>
 				<form id="HomeRight" action="process.php" method="POST">
 					<div class="HomeRightTop">
@@ -233,18 +233,14 @@
 						</address>
 					</div>
 					<div>
-						<h4>Phone</h4>
-						<a href="tel:01234567">01234567</a>
-					</div>
-					<div>
 						<h4>Email</h4>
-						<a href="mailto:tourgo@tourgo.co.uk">tourgo@tourgo.co.uk</a>
+						<a href="mailto:company@tourgoapp.com">company@tourgoapp.com</a>
 					</div>
 				</section>
 				<section>
 					<h3>SOCIAL MEDIA</h3>
 					<div class="socialLinks">
-						<a href="#" target="_blank">
+						<a href="https://www.facebook.com/Tourgo-APP-108726170790774/?modal=admin_todo_tour" target="_blank">
 							<svg id="fb_icon" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
 								<g id="Ellipse_74" data-name="Ellipse 74" fill="none" stroke="#fff" stroke-width="3">
 									<circle cx="25" cy="25" r="25" stroke="none" />
@@ -256,7 +252,7 @@
 								</g>
 							</svg>
 						</a>
-						<a href="#" target="_blank">
+						<a href="https://www.instagram.com/tourgolondon/" target="_blank">
 							<svg id="insta_icon" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
 								<g id="Ellipse_74" data-name="Ellipse 74" fill="none" stroke="#fff" stroke-width="3">
 									<circle cx="25" cy="25" r="25" stroke="none" />
