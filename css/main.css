@@ -9,6 +9,10 @@
 	--web-view-ids: LandingPage___Desktop;
 }
 
+body, html{
+	overflow-x: hidden;
+}
+
 * {
 	margin: 0;
 	padding: 0;

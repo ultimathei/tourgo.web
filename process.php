@@ -24,14 +24,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
 	if(isset($_POST['likeToCompete'])){
 		if ($result = mysqli_query($con, "INSERT INTO emails VALUES ('$u_email', true)")){
 			mysqli_free_result($result);
+			header("location: https://docs.google.com/forms/d/e/1FAIpQLSdsjUgnHmWLVST8QgSkfMc_OaMQIzpx9xhM2J1pgoLh58amyQ/viewform");
 		}
 	} else {
 		if ($result = mysqli_query($con, "INSERT INTO emails VALUES ('$u_email', false)")){
 			mysqli_free_result($result);
+			header("location: https://docs.google.com/forms/d/e/1FAIpQLSdsjUgnHmWLVST8QgSkfMc_OaMQIzpx9xhM2J1pgoLh58amyQ/viewform");
+
 		}
 	}
-
 	mysqli_close($con);
-	header("location: https://docs.google.com/forms/d/e/1FAIpQLSdsjUgnHmWLVST8QgSkfMc_OaMQIzpx9xhM2J1pgoLh58amyQ/viewform");
 }
 ?>
