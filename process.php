@@ -1,12 +1,11 @@
 <?php
-echo "<p>pippo</p>"; //DEBUG STATEMENT
 if ($_SERVER["REQUEST_METHOD"] == "POST"){
-	echo "<p>pippo</p>"; //DEBUG STATEMENT
 	$u_email = filter_var($_POST["email"], FILTER_SANITIZE_EMAIL);
 	if (empty($u_email) || !filter_var($u_email, FILTER_VALIDATE_EMAIL)){
 		die("Please enter a valid email address!");
+		sleep(2);
+		header("location: ./index.php");
 	}
-	echo "<p>pippo</p>"; //DEBUG STATEMENT
    	 echo "<p>" . $u_email . "</p>"; //DEBUG STATEMENT
 	
 	//mysql credentials
