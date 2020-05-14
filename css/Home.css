@@ -217,6 +217,7 @@
 
 .HomeRightTop .inputField{
 	border-radius: .8em;
+	justify-content: space-between;
 }
 
 .HomeRightTop .inputField>input{

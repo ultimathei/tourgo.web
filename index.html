@@ -8,7 +8,6 @@
 	<title>TOURGO LandingPage Prototype</title>
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;800;900&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="./css/main.css">
-	<link rel="stylesheet" type="text/css" href="./css/VideoPlayer.css">
 	<link rel="stylesheet" type="text/css" href="./css/Header.css">
 	<link rel="stylesheet" type="text/css" href="./css/Home.css">
 	<link rel="stylesheet" type="text/css" href="./css/Intro.css">
@@ -17,8 +16,6 @@
 	<link rel="stylesheet" type="text/css" href="./css/Footer.css">
 
 	<script src="libs/jquery-3.5.0.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.6.8/lottie.min.js"></script>
-	<!--<script src="libs/jquery.touch.min.js"></script>-->
 	<script src="./app/app.js"></script>
 </head>
 
@@ -26,7 +23,7 @@
 	<header class="nav-up">
 		<img class="Logo" src="./img/svg/MainLOGO.svg" alt="TOURGO logo (coloured)" />
 		<div class="socialLinks">
-			<a href="#">
+			<a href="#" target="_blank">
 				<svg class="fb_icon" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
 					<g id="Ellipse_74" data-name="Ellipse 74" fill="none" stroke="#fff" stroke-width="3">
 						<circle cx="25" cy="25" r="25" stroke="none" />
@@ -38,33 +35,22 @@
 					</g>
 				</svg>
 			</a>
-			<a href="#">
-				<svg id="yt_icon" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
+			<a href="#" target="_blank">
+				<svg id="insta_icon" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
 					<g id="Ellipse_74" data-name="Ellipse 74" fill="none" stroke="#fff" stroke-width="3">
 						<circle cx="25" cy="25" r="25" stroke="none" />
 						<circle cx="25" cy="25" r="23.5" fill="none" />
 					</g>
-					<g id="youtube-logotype" transform="translate(4.933 9)">
-						<g id="Group_551" data-name="Group 551" transform="translate(7.067)">
-							<path id="Path_986" data-name="Path 986"
-								d="M31.953,40.165a3.2,3.2,0,0,0-2.738-2.488,85.082,85.082,0,0,0-9.482-.351,85.109,85.109,0,0,0-9.484.351,3.2,3.2,0,0,0-2.736,2.488,27.115,27.115,0,0,0-.447,5.986,27.11,27.11,0,0,0,.441,5.986,3.2,3.2,0,0,0,2.737,2.488,85.087,85.087,0,0,0,9.483.351,85.027,85.027,0,0,0,9.483-.351,3.2,3.2,0,0,0,2.737-2.488,27.131,27.131,0,0,0,.443-5.986A27.15,27.15,0,0,0,31.953,40.165ZM14.29,41.651H12.457v9.739h-1.7V41.651h-1.8v-1.6H14.29Zm4.624,9.74H17.383v-.921a2.453,2.453,0,0,1-1.749,1.038.939.939,0,0,1-.986-.628,4.311,4.311,0,0,1-.135-1.256V42.945h1.53v6.218a4.764,4.764,0,0,0,.014.6c.037.238.153.358.358.358.307,0,.628-.237.967-.717V42.945h1.531v8.446Zm5.814-2.535a6.747,6.747,0,0,1-.155,1.7,1.212,1.212,0,0,1-1.222.949,2.086,2.086,0,0,1-1.582-.934v.819h-1.53V40.056h1.53v3.7a2.073,2.073,0,0,1,1.582-.916,1.211,1.211,0,0,1,1.222.953,6.486,6.486,0,0,1,.155,1.7ZM30.5,47.447H27.443v1.5c0,.782.256,1.172.782,1.172a.658.658,0,0,0,.684-.614,9.629,9.629,0,0,0,.034-1.037H30.5v.223c0,.493-.019.833-.033.986a2.181,2.181,0,0,1-.357.917,2.118,2.118,0,0,1-1.851.916,2.191,2.191,0,0,1-1.852-.865,3.271,3.271,0,0,1-.491-1.986V45.7a3.287,3.287,0,0,1,.473-1.99,2.176,2.176,0,0,1,1.833-.866,2.126,2.126,0,0,1,1.805.866A3.32,3.32,0,0,1,30.5,45.7v1.749Z"
-								transform="translate(-7.067 -24.976)" />
-							<path id="Path_987" data-name="Path 987"
-								d="M69.425,58.163q-.767,0-.768,1.172v.781h1.53v-.781C70.187,58.554,69.931,58.163,69.425,58.163Z"
-								transform="translate(-48.28 -38.92)" />
-							<path id="Path_988" data-name="Path 988"
-								d="M52.268,58.163a1.1,1.1,0,0,0-.763.372v5.148a1.092,1.092,0,0,0,.763.377c.441,0,.666-.377.666-1.14v-3.6C52.934,58.554,52.71,58.163,52.268,58.163Z"
-								transform="translate(-36.803 -38.92)" />
-							<path id="Path_989" data-name="Path 989"
-								d="M54.1,17.473a2.485,2.485,0,0,0,1.767-1.048v.931h1.547V8.82H55.87v6.524c-.343.484-.668.724-.977.724-.207,0-.329-.122-.363-.362a3.587,3.587,0,0,1-.019-.6V8.82H52.97v6.749a4.312,4.312,0,0,0,.137,1.269A.95.95,0,0,0,54.1,17.473Z"
-								transform="translate(-37.783 -5.902)" />
-							<path id="Path_990" data-name="Path 990"
-								d="M19.506,6.815v4.639h1.715V6.815L23.284,0H21.549l-1.17,4.5L19.162,0h-1.8c.362,1.062.738,2.129,1.1,3.191A28.215,28.215,0,0,1,19.506,6.815Z"
-								transform="translate(-13.953)" />
-							<path id="Path_991" data-name="Path 991"
-								d="M37.6,17.264a2.108,2.108,0,0,0,1.8-.874,3.339,3.339,0,0,0,.48-2.007V11.394a3.345,3.345,0,0,0-.48-2.011,2.293,2.293,0,0,0-3.6,0,3.317,3.317,0,0,0-.484,2.011v2.989A3.309,3.309,0,0,0,35.8,16.39,2.108,2.108,0,0,0,37.6,17.264Zm-.738-6.18c0-.79.24-1.183.738-1.183s.737.393.737,1.183v3.59c0,.79-.239,1.185-.737,1.185s-.738-.4-.738-1.185Z"
-								transform="translate(-25.968 -5.693)" />
-						</g>
+					<g id="instagram" transform="translate(11.104 11.293)">
+						<path id="Path_992" data-name="Path 992"
+							d="M27.1,7.857a9.766,9.766,0,0,0-.621-3.242A6.846,6.846,0,0,0,22.57.7,9.791,9.791,0,0,0,19.328.084C17.9.016,17.443,0,13.815,0S9.732.016,8.307.078A9.768,9.768,0,0,0,5.065.7a6.521,6.521,0,0,0-2.37,1.545A6.58,6.58,0,0,0,1.154,4.61,9.792,9.792,0,0,0,.533,7.852C.465,9.283.449,9.737.449,13.365s.016,4.083.078,5.508a9.765,9.765,0,0,0,.621,3.242,6.845,6.845,0,0,0,3.91,3.91,9.792,9.792,0,0,0,3.242.621c1.425.063,1.88.078,5.508.078s4.083-.015,5.508-.078a9.763,9.763,0,0,0,3.242-.621,6.836,6.836,0,0,0,3.911-3.91,9.8,9.8,0,0,0,.621-3.242c.063-1.425.078-1.88.078-5.508S27.164,9.283,27.1,7.857ZM24.7,18.769a7.325,7.325,0,0,1-.459,2.48A4.433,4.433,0,0,1,21.7,23.786a7.351,7.351,0,0,1-2.48.459c-1.41.063-1.832.078-5.4.078s-3.994-.016-5.4-.078a7.322,7.322,0,0,1-2.48-.459,4.112,4.112,0,0,1-1.535-1,4.155,4.155,0,0,1-1-1.535,7.352,7.352,0,0,1-.459-2.48c-.063-1.41-.078-1.833-.078-5.4s.015-3.994.078-5.4A7.322,7.322,0,0,1,3.409,5.5a4.062,4.062,0,0,1,1-1.535,4.149,4.149,0,0,1,1.535-1,7.356,7.356,0,0,1,2.48-.459c1.41-.063,1.833-.078,5.4-.078s3.994.016,5.4.078a7.325,7.325,0,0,1,2.48.459,4.11,4.11,0,0,1,1.535,1,4.154,4.154,0,0,1,1,1.535,7.355,7.355,0,0,1,.459,2.48c.063,1.41.078,1.832.078,5.4S24.758,17.359,24.7,18.769Zm0,0"
+							 />
+						<path id="Path_993" data-name="Path 993"
+							d="M131.815,124.5a6.865,6.865,0,1,0,6.865,6.865A6.867,6.867,0,0,0,131.815,124.5Zm0,11.319a4.453,4.453,0,1,1,4.453-4.453A4.454,4.454,0,0,1,131.815,135.819Zm0,0"
+							transform="translate(-118 -118)"  />
+						<path id="Path_994" data-name="Path 994"
+							d="M365.655,90.2a1.6,1.6,0,1,1-1.6-1.6A1.6,1.6,0,0,1,365.655,90.2Zm0,0"
+							transform="translate(-343.1 -83.976)"/>
 					</g>
 				</svg>
 			</a>
@@ -81,6 +67,7 @@
 							and reach ever-increasing discounts.</h2>
 					</div>
 					<button class="watchVideoBtn">
+						<!--
 						<svg class="videoIcon" xmlns="http://www.w3.org/2000/svg" width="31.22" height="31.204"
 							viewBox="0 0 31.22 31.204">
 							<g id="Group_70" data-name="Group 70" transform="translate(10.534 7.216)">
@@ -97,6 +84,7 @@
 								</g>
 							</g>
 						</svg>
+					-->
 						<p>What is TOURGO?</p>
 					</button>
 				</div>
@@ -138,7 +126,44 @@
 			</div>
 		</div>
 		<div class="Intro">
-			<div id="bm"></div>
+			<div class="Accordion">
+				<div class="titles">
+					<a class="active">What is TOURGO?</a>
+					<a>Why TOURGO?</a>
+					<a>Our story</a>
+				</div>
+				<div class="texts">
+					<p class="active">TOURGO is a mobile app that aims to revolutionise the way we explore
+						and enjoy London. It will allow you to pick from various exciting
+						challenges to do, ranging from relaxing with friends at a bar to
+						uncovering hidden secrets around the city.
+						<br /><br />When you complete a challenge, you will be rewarded with points
+						according to the difficulty level. The points you collected will determine
+						the discounts you can use at our partner eateries.
+					</p>
+
+					<p>Because TOURGO brings all the fun you wanted in only one place.
+						It’s all-in-one and combines plenty of fun local activities, amazing
+						discounts and a blend of gamification.<br /><br />
+						Finally, our leisure time will be even more engaging, easier to figure out
+						and cheaper!</p>
+					<p>
+						TOURGO is the story of two London based students trying to make their time away from the library desk more
+						captivating and rewarding. After exhausting the conventional ways of seeing the city, they wanted
+						something to make exploring London as exciting as like never-before.<br/><br/>
+						Supported by their studies and specialist interests while dealing with
+						crazy term schedules and gamer raging flatmates, they finally
+						envisioned an app destined to change the way we experience London.
+						Foolish as it may seem, they imagined a city where people are happier
+						and their lives more compelling and fun. That’s how<br/><br/>
+						TOURGO WAS BORN, TO BE NOT JUST A REGULAR APP, BUT A NEW
+						WAY OF LIFE.<br/><br/>
+						Today, a passionate and skilled TOURGO team is turning this vision into
+						reality.
+
+					</p>
+				</div>
+			</div>
 		</div>
 		<div class="About">
 			<h2>How does TOURGO work?</h2>
@@ -170,39 +195,23 @@
 				<h2>Get Inspired</h2>
 				<div class="quotesCarousel">
 					<ul class="quotesList">
-						<li class="moving">
-							<p>“Let us make our future now, and let us make our dreams tomorrow’s reality”<br/>
+						<li class="moving testQuote">
+							<p>“Let us make our future now, and let us make our dreams tomorrow’s reality”<br />
 								<span>(Malala Yousafzai)</span></p>
 						</li>
 						<li>
-							<p>“The future starts today, not tomorrow”<br/>
+							<p>“The future starts today, not tomorrow”<br />
 								<span>(Pope John Paul II)</span></p>
 						</li>
 						<li>
-							<p>“Yesterday is not ours to recover, but tomorrow is ours to win or lose”<br/>
+							<p>“Yesterday is not ours to recover, but tomorrow is ours to win or lose”<br />
 								<span>(Lyndon B. Johnson)</span></p>
 						</li>
 						<li>
-							<p>“Tomorrow belongs to those who prepare for it today”<br/>
+							<p>“Tomorrow belongs to those who prepare for it today”<br />
 								<span>(Malcolm X)</span></p>
 						</li>
 					</ul>
-					<div class="quoteCarouselControls">
-						<div class="quoteStepperBtns">
-							<a class="prevItem">
-								<img src="img/png/arrow.png" height="50" width="27"/>
-							</a>
-							<a class="nextItem">
-								<img src="img/png/arrow_rigth.png" height="50" width="27"/>
-							</a>
-						</div>
-						<div class="quoteCarouselButtons">
-							<button class="active"></button>
-							<button></button>
-							<button></button>
-							<button></button>
-						</div>
-					</div>
 				</div>
 			</div>
 			<div class="footerContent">
@@ -235,7 +244,7 @@
 				<section>
 					<h3>SOCIAL MEDIA</h3>
 					<div class="socialLinks">
-						<a href="#">
+						<a href="#" target="_blank">
 							<svg id="fb_icon" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
 								<g id="Ellipse_74" data-name="Ellipse 74" fill="none" stroke="#fff" stroke-width="3">
 									<circle cx="25" cy="25" r="25" stroke="none" />
@@ -247,44 +256,22 @@
 								</g>
 							</svg>
 						</a>
-						<a href="#">
-							<svg id="yt_icon" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
+						<a href="#" target="_blank">
+							<svg id="insta_icon" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
 								<g id="Ellipse_74" data-name="Ellipse 74" fill="none" stroke="#fff" stroke-width="3">
 									<circle cx="25" cy="25" r="25" stroke="none" />
 									<circle cx="25" cy="25" r="23.5" fill="none" />
 								</g>
-								<g id="youtube-logotype" transform="translate(4.933 9)">
-									<g id="Group_551" data-name="Group 551" transform="translate(7.067)">
-										<path id="Path_986" data-name="Path 986"
-											d="M31.953,40.165a3.2,3.2,0,0,0-2.738-2.488,85.082,85.082,0,0,0-9.482-.351,85.109,85.109,0,0,0-9.484.351,3.2,3.2,0,0,0-2.736,2.488,27.115,27.115,0,0,0-.447,5.986,27.11,27.11,0,0,0,.441,5.986,3.2,3.2,0,0,0,2.737,2.488,85.087,85.087,0,0,0,9.483.351,85.027,85.027,0,0,0,9.483-.351,3.2,3.2,0,0,0,2.737-2.488,27.131,27.131,0,0,0,.443-5.986A27.15,27.15,0,0,0,31.953,40.165ZM14.29,41.651H12.457v9.739h-1.7V41.651h-1.8v-1.6H14.29Zm4.624,9.74H17.383v-.921a2.453,2.453,0,0,1-1.749,1.038.939.939,0,0,1-.986-.628,4.311,4.311,0,0,1-.135-1.256V42.945h1.53v6.218a4.764,4.764,0,0,0,.014.6c.037.238.153.358.358.358.307,0,.628-.237.967-.717V42.945h1.531v8.446Zm5.814-2.535a6.747,6.747,0,0,1-.155,1.7,1.212,1.212,0,0,1-1.222.949,2.086,2.086,0,0,1-1.582-.934v.819h-1.53V40.056h1.53v3.7a2.073,2.073,0,0,1,1.582-.916,1.211,1.211,0,0,1,1.222.953,6.486,6.486,0,0,1,.155,1.7ZM30.5,47.447H27.443v1.5c0,.782.256,1.172.782,1.172a.658.658,0,0,0,.684-.614,9.629,9.629,0,0,0,.034-1.037H30.5v.223c0,.493-.019.833-.033.986a2.181,2.181,0,0,1-.357.917,2.118,2.118,0,0,1-1.851.916,2.191,2.191,0,0,1-1.852-.865,3.271,3.271,0,0,1-.491-1.986V45.7a3.287,3.287,0,0,1,.473-1.99,2.176,2.176,0,0,1,1.833-.866,2.126,2.126,0,0,1,1.805.866A3.32,3.32,0,0,1,30.5,45.7v1.749Z"
-											transform="translate(-7.067 -24.976)" />
-										<path id="Path_987" data-name="Path 987"
-											d="M69.425,58.163q-.767,0-.768,1.172v.781h1.53v-.781C70.187,58.554,69.931,58.163,69.425,58.163Z"
-											transform="translate(-48.28 -38.92)" />
-										<path id="Path_988" data-name="Path 988"
-											d="M52.268,58.163a1.1,1.1,0,0,0-.763.372v5.148a1.092,1.092,0,0,0,.763.377c.441,0,.666-.377.666-1.14v-3.6C52.934,58.554,52.71,58.163,52.268,58.163Z"
-											transform="translate(-36.803 -38.92)" />
-										<path id="Path_989" data-name="Path 989"
-											d="M54.1,17.473a2.485,2.485,0,0,0,1.767-1.048v.931h1.547V8.82H55.87v6.524c-.343.484-.668.724-.977.724-.207,0-.329-.122-.363-.362a3.587,3.587,0,0,1-.019-.6V8.82H52.97v6.749a4.312,4.312,0,0,0,.137,1.269A.95.95,0,0,0,54.1,17.473Z"
-											transform="translate(-37.783 -5.902)" />
-										<path id="Path_990" data-name="Path 990"
-											d="M19.506,6.815v4.639h1.715V6.815L23.284,0H21.549l-1.17,4.5L19.162,0h-1.8c.362,1.062.738,2.129,1.1,3.191A28.215,28.215,0,0,1,19.506,6.815Z"
-											transform="translate(-13.953)" />
-										<path id="Path_991" data-name="Path 991"
-											d="M37.6,17.264a2.108,2.108,0,0,0,1.8-.874,3.339,3.339,0,0,0,.48-2.007V11.394a3.345,3.345,0,0,0-.48-2.011,2.293,2.293,0,0,0-3.6,0,3.317,3.317,0,0,0-.484,2.011v2.989A3.309,3.309,0,0,0,35.8,16.39,2.108,2.108,0,0,0,37.6,17.264Zm-.738-6.18c0-.79.24-1.183.738-1.183s.737.393.737,1.183v3.59c0,.79-.239,1.185-.737,1.185s-.738-.4-.738-1.185Z"
-											transform="translate(-25.968 -5.693)" />
-									</g>
-								</g>
-							</svg>
-						</a>
-						<a href="#">
-							<svg id="twt_icon" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
-								<path id="twitter"
-									d="M9.3,20.409A21.4,21.4,0,0,1,6,20.146,15.51,15.51,0,0,1,1.477,18.5L0,17.693l1.6-.526c1.749-.575,2.812-.932,4.129-1.49A5.493,5.493,0,0,1,2.9,12.406l-.372-1.13.305.047a5.549,5.549,0,0,1-.695-.857A5.261,5.261,0,0,1,1.25,7.338l.07-.986.59.229a5.519,5.519,0,0,1-.535-1.5,5.7,5.7,0,0,1,.608-3.84L2.5.3l.688.826a12.657,12.657,0,0,0,8.2,4.616,4.9,4.9,0,0,1,.3-2.605A4.878,4.878,0,0,1,13.666.861,5.957,5.957,0,0,1,17.123.012a5.522,5.522,0,0,1,3.394,1.4A11.4,11.4,0,0,0,21.76,1c.272-.1.581-.219.968-.352L24.153.154l-.929,2.653c.061-.005.124-.01.19-.012l1.521-.069-.9,1.229c-.052.07-.065.09-.083.118-.072.109-.163.245-1.4,1.893a2.324,2.324,0,0,0-.435,1.514,14.317,14.317,0,0,1-.781,5.758,10.19,10.19,0,0,1-2.735,4.052,12.081,12.081,0,0,1-5.726,2.769A17.629,17.629,0,0,1,9.3,20.409Zm0,0"
-									transform="translate(12.938 15.003)" />
-								<g id="Ellipse_74" data-name="Ellipse 74" fill="none" stroke="#fff" stroke-width="3">
-									<circle cx="25" cy="25" r="25" stroke="none" />
-									<circle cx="25" cy="25" r="23.5" fill="none" />
+								<g id="instagram" transform="translate(11.104 11.293)">
+									<path id="Path_992" data-name="Path 992"
+										d="M27.1,7.857a9.766,9.766,0,0,0-.621-3.242A6.846,6.846,0,0,0,22.57.7,9.791,9.791,0,0,0,19.328.084C17.9.016,17.443,0,13.815,0S9.732.016,8.307.078A9.768,9.768,0,0,0,5.065.7a6.521,6.521,0,0,0-2.37,1.545A6.58,6.58,0,0,0,1.154,4.61,9.792,9.792,0,0,0,.533,7.852C.465,9.283.449,9.737.449,13.365s.016,4.083.078,5.508a9.765,9.765,0,0,0,.621,3.242,6.845,6.845,0,0,0,3.91,3.91,9.792,9.792,0,0,0,3.242.621c1.425.063,1.88.078,5.508.078s4.083-.015,5.508-.078a9.763,9.763,0,0,0,3.242-.621,6.836,6.836,0,0,0,3.911-3.91,9.8,9.8,0,0,0,.621-3.242c.063-1.425.078-1.88.078-5.508S27.164,9.283,27.1,7.857ZM24.7,18.769a7.325,7.325,0,0,1-.459,2.48A4.433,4.433,0,0,1,21.7,23.786a7.351,7.351,0,0,1-2.48.459c-1.41.063-1.832.078-5.4.078s-3.994-.016-5.4-.078a7.322,7.322,0,0,1-2.48-.459,4.112,4.112,0,0,1-1.535-1,4.155,4.155,0,0,1-1-1.535,7.352,7.352,0,0,1-.459-2.48c-.063-1.41-.078-1.833-.078-5.4s.015-3.994.078-5.4A7.322,7.322,0,0,1,3.409,5.5a4.062,4.062,0,0,1,1-1.535,4.149,4.149,0,0,1,1.535-1,7.356,7.356,0,0,1,2.48-.459c1.41-.063,1.833-.078,5.4-.078s3.994.016,5.4.078a7.325,7.325,0,0,1,2.48.459,4.11,4.11,0,0,1,1.535,1,4.154,4.154,0,0,1,1,1.535,7.355,7.355,0,0,1,.459,2.48c.063,1.41.078,1.832.078,5.4S24.758,17.359,24.7,18.769Zm0,0"
+										 />
+									<path id="Path_993" data-name="Path 993"
+										d="M131.815,124.5a6.865,6.865,0,1,0,6.865,6.865A6.867,6.867,0,0,0,131.815,124.5Zm0,11.319a4.453,4.453,0,1,1,4.453-4.453A4.454,4.454,0,0,1,131.815,135.819Zm0,0"
+										transform="translate(-118 -118)"  />
+									<path id="Path_994" data-name="Path 994"
+										d="M365.655,90.2a1.6,1.6,0,1,1-1.6-1.6A1.6,1.6,0,0,1,365.655,90.2Zm0,0"
+										transform="translate(-343.1 -83.976)"/>
 								</g>
 							</svg>
 						</a>
@@ -300,7 +287,6 @@
 	</div>
 	</div>
 	</div>
-	<!--<script src="./app/vid.js"></script>-->
 </body>
 
 </html>
