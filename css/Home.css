@@ -512,8 +512,6 @@
 		align-items: center;
 		text-align: center;
 		order: 0;
-		background-image: linear-gradient( to bottom right, #00609B, #103F69);
-		transform: rotate(-1deg) scale(1.075);
 	}
 	#HomeLeft>*:not(button) {
 		margin-bottom: 1em !important;
@@ -553,7 +551,8 @@
 		width: unset !important;
 	}
 	#Home .background .left {
-		display: none;
+		height: 24%;
+		transform: rotate(-2deg) scale(1.1);
 	}
 	#Home .background .right {
 		height: 100vh;
