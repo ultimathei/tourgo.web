@@ -15,7 +15,10 @@
 	<link rel="stylesheet" type="text/css" href="./css/About.css">
 	<link rel="stylesheet" type="text/css" href="./css/Quotes.css">
 	<link rel="stylesheet" type="text/css" href="./css/Footer.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+
+	<script src="libs/jquery-3.5.0.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.6.8/lottie.min.js"></script>
+	<!--<script src="libs/jquery.touch.min.js"></script>-->
 	<script src="./app/app.js"></script>
 </head>
 
@@ -73,7 +76,7 @@
 				<div id="HomeLeft">
 					<img class="Logo" src="./img/svg/MainLOGO.svg" alt="TOURGO logo (coloured)" />
 					<div>
-						<h1>THE ULTIMATE APP <br />to explore london*</h1>
+						<h1>THE ULTIMATE APP <br />to explore london</h1>
 						<h2>Pick from tons of cool things to do
 							and reach ever-increasing discounts.</h2>
 					</div>
@@ -103,18 +106,30 @@
 					<div class="featureBubble">Feature three</div>
 					<img id="iphone_X" src="img/png/iphone_X.png" srcset="img/png/iphone_X.png 1x, img/png/iphone_X@2x.png 2x">
 				</div>
-				<form id="HomeRight" method="post" action="process.php">
+				<form id="HomeRight" action="process.php">
 					<div class="HomeRightTop">
-						<p>Don’t miss the app launch and grab your chance to win a total of
-							£500 with TOURGO launching competition</p>
-						<div class="inputField">
-							<input type="text" id="email" name="user_email" placeholder="email address" />
+						<div>
+							<p>Don’t miss the app launch and <br />
+								grab your chance to <span>WIN</span> a total of
+							</p>
+							<p>
+								<span>£500</span> with <span>TOURGO</span>'s
+							</p>
+							<p>
+								LAUNCHING COMPETITION
+							</p>
 						</div>
-						<button class="goToFormBtn">
-							<div>
-								<p>Of course - I won’t miss it!</p>
-							</div>
-						</button>
+						<div class="inputField">
+							<input type="text" id="email" name="email" placeholder="Email address..." />
+							<button class="goToFormBtn">
+								<p>Sign Up</p>
+							</button>
+						</div>
+						<div class="inputCheckbox">
+							<label for="likeToCompete">I'd like to get notified about TOURGO<br />
+								and take part in the competition</label>
+							<input type="checkbox" id="likeToCompete" name="likeToCompete" />
+						</div>
 					</div>
 				</form>
 			</div>
@@ -123,7 +138,7 @@
 			</div>
 		</div>
 		<div class="Intro">
-			Introduction video/animation to be inserted.
+			<div id="bm"></div>
 		</div>
 		<div class="About">
 			<h2>How does TOURGO work?</h2>
@@ -150,10 +165,46 @@
 				<button></button>
 			</div>
 		</div>
-		<div class="Quotes">
-			Quotes carousel to be inserted.
-		</div>
 		<footer>
+			<div class="Quotes">
+				<h2>Get Inspired</h2>
+				<div class="quotesCarousel">
+					<ul class="quotesList">
+						<li class="moving">
+							<p>“Let us make our future now, and let us make our dreams tomorrow’s reality”<br/>
+								<span>(Malala Yousafzai)</span></p>
+						</li>
+						<li>
+							<p>“The future starts today, not tomorrow”<br/>
+								<span>(Pope John Paul II)</span></p>
+						</li>
+						<li>
+							<p>“Yesterday is not ours to recover, but tomorrow is ours to win or lose”<br/>
+								<span>(Lyndon B. Johnson)</span></p>
+						</li>
+						<li>
+							<p>“Tomorrow belongs to those who prepare for it today”<br/>
+								<span>(Malcolm X)</span></p>
+						</li>
+					</ul>
+					<div class="quoteCarouselControls">
+						<div class="quoteStepperBtns">
+							<a class="prevItem">
+								<img src="img/png/arrow.png" height="50" width="27"/>
+							</a>
+							<a class="nextItem">
+								<img src="img/png/arrow_rigth.png" height="50" width="27"/>
+							</a>
+						</div>
+						<div class="quoteCarouselButtons">
+							<button class="active"></button>
+							<button></button>
+							<button></button>
+							<button></button>
+						</div>
+					</div>
+				</div>
+			</div>
 			<div class="footerContent">
 				<section>
 					<h3>ABOUT US</h3>
@@ -249,6 +300,7 @@
 	</div>
 	</div>
 	</div>
+	<!--<script src="./app/vid.js"></script>-->
 </body>
 
 </html>

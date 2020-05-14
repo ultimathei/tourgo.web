@@ -20,11 +20,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
 	}
 
 	// Perform query
-	if ($result = mysqli_query($con, "INSERT INTO emails VALUES ('$u_email', true)")){
-		mysqli_free_result($result);
+	if(isset($_POST['check1'])){
+		if ($result = mysqli_query($con, "INSERT INTO emails VALUES ('$u_email', true)")){
+			mysqli_free_result($result);
+		}
+	} else {
+		if ($result = mysqli_query($con, "INSERT INTO emails VALUES ('$u_email', false)")){
+			mysqli_free_result($result);
+		}
 	}
 
 	mysqli_close($con);
-	header("location: ./index.php");
+	header("location: https://docs.google.com/forms/d/e/1FAIpQLSdsjUgnHmWLVST8QgSkfMc_OaMQIzpx9xhM2J1pgoLh58amyQ/viewform");
 }
 ?>
