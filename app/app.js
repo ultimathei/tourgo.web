@@ -127,7 +127,6 @@ const swipeHandlerMobile = (container, moveableSelector, buttonsSelector) => {
   const threshold = 50;
   $(container)
     .bind('touchstart', function (event) {
-      alert(event.changedTouches);
       isDragging = false;
       isCursorDown = true;
       cursorPosStart = event.pageX;
