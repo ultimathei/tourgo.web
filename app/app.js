@@ -10,7 +10,6 @@ $(document).ready(function () {
   autoSwapQuote('.testQuote', 5000, 0);
   introHandler();
   swipeHandler('.About', '.aboutSections', '.aboutCarouselButtons button');
-  swipeHandlerMobile('.About', '.aboutSections', '.aboutCarouselButtons button');
 });
 
 /******************************************** 
