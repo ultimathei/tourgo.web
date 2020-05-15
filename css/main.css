@@ -75,12 +75,15 @@ input:focus{
 	display: none !important;
 }
 
-::-moz-selection{
+*:not(img)::-moz-selection{
 	background-color: #FF512F ;
 	color: white;
 }
 
-::selection {
+*:not(img)::selection {
 	background-color: #FF512F ;
 	color: white;
+}
+img::selection{
+	background-color: none !important;
 }

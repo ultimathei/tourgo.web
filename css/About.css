@@ -92,11 +92,11 @@
 }
 
 .aboutSection img::-moz-selection{
-	background-color: none ;
+	background-color: none !important;
 }
 
 .aboutSection img::selection {
-	background-color: #FF512F ;
+	background-color: none !important ;
 }
 
 
