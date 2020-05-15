@@ -91,6 +91,14 @@
 	background-image: linear-gradient( to bottom right, #F09819, #FF512F);
 }
 
+.aboutSection img::-moz-selection{
+	background-color: none ;
+}
+
+.aboutSection img::selection {
+	background-color: #FF512F ;
+}
+
 
 @media only screen and (max-width: 400px){
 	.About h2{

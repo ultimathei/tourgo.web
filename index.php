@@ -5,7 +5,7 @@
 	<meta charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>TOURGO LandingPage Prototype</title>
+	<title>TOURGO - to explore London</title>
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;800;900&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="./css/main.css">
 	<link rel="stylesheet" type="text/css" href="./css/Header.css">
@@ -168,17 +168,17 @@
 			<h2>How does TOURGO work?</h2>
 			<div class="aboutSections">
 				<div class="aboutSection">
-					<img src="img/png/tourgoers_activities.png"
+					<img src="img/png/tourgoers_activities.png" draggable="false"
 						srcset="img/png/tourgoers_activities.png 1x, img/png/tourgoers_activities@2x.png 2x">
 					<p>Choose from a wide range of TOURGO challenges</p>
 				</div>
 				<div class="aboutSection">
-					<img src="img/png/tourgoers_rewards.png"
+					<img src="img/png/tourgoers_rewards.png" draggable="false"
 						srcset="img/png/tourgoers_rewards.png 1x, img/png/tourgoers_rewards@2x.png 2x">
 					<p>Complete the challenge to win points</p>
 				</div>
 				<div class="aboutSection">
-					<img src="img/png/tourgoers_restaurants.png"
+					<img src="img/png/tourgoers_restaurants.png" draggable="false"
 						srcset="img/png/tourgoers_restaurants.png 1x, img/png/tourgoers_restaurants@2x.png 2x">
 					<p>Collect more points and unlock ever-increasing discounts</p>
 				</div>

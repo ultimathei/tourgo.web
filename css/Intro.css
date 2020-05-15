@@ -38,6 +38,7 @@
 	font-size: 1.2em;
 	padding: .5em;
 	opacity: .3;
+	transition: font-size .2s;
 }
 .Intro .titles a.active{
 	font-size: 1.6em;

@@ -9,6 +9,7 @@ $(document).ready(function () {
   onClickScrollTo(".watchVideoBtn", ".Intro");
   autoSwapQuote('.testQuote', 5000, 0);
   introHandler();
+  swipeHandler('.About', '.aboutSections', '.aboutCarouselButtons button');
 });
 
 /******************************************** 
@@ -36,20 +37,99 @@ const quotesArray = [
 /******************************************** 
 * FUNCTIONS *********************************
 ********************************************/
+//about carousel swipe handler
+const swipeHandler = (container, moveableSelector, buttonsSelector) => {
+  let isInProgress = false;
+  let isDragging = false;
+  let isCursorDown = false;
+  let cursorPosStart = null;
+  let cursorPosEnd = null;
+  let aboutWidth = null;
+  let margLeftInit = null;
+  const threshold = 50;
+  $(container)
+    .mousedown(function (event) {
+      isDragging = false;
+      isCursorDown = true;
+      cursorPosStart = event.pageX;
+      aboutWidth = $(container).width();
+      margLeftInit = $(moveableSelector).css('margin-left');
+    })
+    .mousemove(function (event) {
+      if (isCursorDown) {
+        isDragging = true;
+        $(moveableSelector).css({
+          marginLeft: parseInt(margLeftInit) - (cursorPosStart - event.pageX) + 'px'
+        })
+      }
+    })
+    .mouseup(function (event) {
+      let wasDragging = isDragging;
+      isDragging = false;
+      isCursorDown = false;
+      cursorPosEnd = event.pageX;
+      if (wasDragging && !isInProgress) {
+        let dragged = cursorPosStart - cursorPosEnd;
+        const activeItem = $(buttonsSelector+'.active');
+        const buttons = $(buttonsSelector);
+        const activeBtnIndex = buttons.index(activeItem);
+
+        let newMargin = parseInt(margLeftInit) / parseInt(aboutWidth) * 100;
+        if (dragged > threshold && (activeBtnIndex + 1) < buttons.length) {
+          buttons.removeClass("active");
+          buttons.eq(activeBtnIndex + 1).addClass("active");
+          newMargin = -100 * (activeBtnIndex + 1);
+        }
+        else if (dragged < -50 && (activeBtnIndex - 1) >= 0) {
+          buttons.removeClass("active");
+          buttons.eq(activeBtnIndex - 1).addClass("active");
+          newMargin = -100 * (activeBtnIndex - 1);
+        }
+
+        //animate
+        isInProgress = true;
+        $(moveableSelector).animate({
+          marginLeft: newMargin + '%'
+        },
+        500,
+        function () {
+          isInProgress = false;
+        })
+      }
+    })
+    //reset on mouseleave
+    .mouseleave(function (event) {
+      let wasDragging = isDragging;
+      isDragging = false;
+      isCursorDown = false;
+      cursorPosEnd = event.pageX;
+      if (wasDragging && !isInProgress) {
+        isInProgress = true;
+        $(moveableSelector).animate({
+          marginLeft: parseInt(margLeftInit) / parseInt(aboutWidth) * 100 + '%'
+        },
+          500,
+          function () {
+            isInProgress = false;
+          })
+      }
+    })
+}
+
 //swap intro text content on click
 const introHandler = () => {
-  console.log($('.Intro .Accordion .titles a'));
 
-  $('.Intro .Accordion .titles a:not(active)').click(function (event) {
-    const index = $(this).index();
+  $('.Intro .Accordion .titles a:not(active)')
+    .click(function (event) {
+      const index = $(this).index();
 
-    $('.Intro .Accordion .titles a').removeClass('active');
-    $(this).addClass('active');
+      $('.Intro .Accordion .titles a').removeClass('active');
+      $(this).addClass('active');
 
-    const textsArray = $('.Intro .Accordion .texts p');
-    textsArray.removeClass('active');
-    $(`.Intro .Accordion .texts p:nth-of-type(${index+1})`).addClass('active');
-  });
+      const textsArray = $('.Intro .Accordion .texts p');
+      textsArray.removeClass('active');
+      $(`.Intro .Accordion .texts p:nth-of-type(${index + 1})`).addClass('active');
+    });
 }
 
 //auto swap quotes
@@ -62,12 +142,14 @@ const autoSwapQuote = (querySelector, duration, quoteIndex) => {
       opacity: 0
     }, 100);
     setTimeout(() => {
-      $(querySelector).html(
-        `<p>"` + quotesArray[localIndex].quote + `"</br>` +
-        `<span>(` + quotesArray[localIndex].author + `)</span></p>`
-      ).animate({
-        opacity: 1
-      }, 250);
+      $(querySelector)
+        .html(
+          `<p>"` + quotesArray[localIndex].quote + `"</br>` +
+          `<span>(` + quotesArray[localIndex].author + `)</span></p>`
+        )
+        .animate({
+          opacity: 1
+        }, 250);
       autoSwapQuote(querySelector, duration, localIndex + 1);
     }, 250);
   }, duration - 500);
