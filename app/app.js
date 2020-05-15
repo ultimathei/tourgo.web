@@ -126,14 +126,14 @@ const swipeHandlerMobile = (container, moveableSelector, buttonsSelector) => {
   let margLeftInit = null;
   const threshold = 50;
   $(container)
-    .touchstart(function (event) {
+    .bind('touchstart', function (event) {
       isDragging = false;
       isCursorDown = true;
       cursorPosStart = event.pageX;
       aboutWidth = $(container).width();
       margLeftInit = $(moveableSelector).css('margin-left');
     })
-    .touchmove(function (event) {
+    .bind('touchmove',function (event) {
       if (isCursorDown) {
         isDragging = true;
         $(moveableSelector).css({
@@ -141,7 +141,7 @@ const swipeHandlerMobile = (container, moveableSelector, buttonsSelector) => {
         })
       }
     })
-    .touchend(function (event) {
+    .bind('touchend', function (event) {
       let wasDragging = isDragging;
       isDragging = false;
       isCursorDown = false;
@@ -173,23 +173,6 @@ const swipeHandlerMobile = (container, moveableSelector, buttonsSelector) => {
         function () {
           isInProgress = false;
         })
-      }
-    })
-    //reset on mouseleave
-    .touchleave(function (event) {
-      let wasDragging = isDragging;
-      isDragging = false;
-      isCursorDown = false;
-      cursorPosEnd = event.pageX;
-      if (wasDragging && !isInProgress) {
-        isInProgress = true;
-        $(moveableSelector).animate({
-          marginLeft: parseInt(margLeftInit) / parseInt(aboutWidth) * 100 + '%'
-        },
-          500,
-          function () {
-            isInProgress = false;
-          })
       }
     })
 }
