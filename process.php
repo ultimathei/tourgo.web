@@ -33,6 +33,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
 	if(isset($_POST['likeToCompete'])){
 		if ($result = mysqli_query($con, "INSERT INTO emails VALUES ('$u_email', true)")){
 			mysqli_free_result($result);
+			echo $u_email;
 			mailer($u_email);
 			//header("location: https://docs.google.com/forms/d/e/1FAIpQLSdsjUgnHmWLVST8QgSkfMc_OaMQIzpx9xhM2J1pgoLh58amyQ/viewform");
 		}
@@ -46,27 +47,29 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
 
 function mailer($user_email) {
 	echo "pippo";
+	echo $user_email;
 	// Instantiation and passing `true` enables exceptions
 	$mail = new PHPMailer;
 
 	//Server settings
-	$mail->SMTPDebug = SMTP::DEBUG_SERVER;                      // Enable verbose debug output
-	$mail->isSMTP();                                            // Send using SMTP
+	//$mail->SMTPDebug = SMTP::DEBUG_SERVER;                      // Enable verbose debug output
+	//$mail->isSMTP();                                            // Send using SMTP
 	$mail->Host       = 'mail.tourgoapp.com';                    // Set the SMTP server to send through
-	$mail->SMTPAuth   = true;                                   // Enable SMTP authentication
-	$mail->Username   = 'company@tourgoapp.com';                     // SMTP username
+	$mail->SMTPAuth   = false;                                   // Enable SMTP authentication
+	$mail->Username   = 'company';                     // SMTP username
 	$mail->Password   = '4gcBjf5cTP';                               // SMTP password
-	$mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;         // Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` encouraged
+	$mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;         // Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` encouraged
 	$mail->Port       = 995;                                    // TCP port to connect to, use 465 for `PHPMailer::ENCRYPTION_SMTPS` above
 
 	//Recipients
 	$mail->setFrom('company@tourgoapp.com', 'TOURGO LTD');
-	$mail->addAddress($user_email, 'Joe User');     // Add a recipient
+	$mail->addAddress($user_email);     // Add a recipient
+	//$mail->addAddress('marcella.vincenzo2@gmail.com');
 	
 
 	// Attachments
-	$mail->addAttachment('/var/tmp/file.tar.gz');         // Add attachments
-	$mail->addAttachment('/tmp/image.jpg', 'new.jpg');    // Optional name
+	//$mail->addAttachment('/var/tmp/file.tar.gz');         // Add attachments
+	//$mail->addAttachment('/tmp/image.jpg', 'new.jpg');    // Optional name
 
 	// Content
 	$mail->isHTML(true);                                  // Set email format to HTML
@@ -75,7 +78,7 @@ function mailer($user_email) {
 	$mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
 	if (!$mail->send()) {
-		$msg .= 'Mailer Error: '. $mail->ErrorInfo;
+		echo 'Mailer Error: '. $mail->ErrorInfo;
 	} else {
 		$msg .= 'Message sent!';
 	}
