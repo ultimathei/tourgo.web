@@ -69,7 +69,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
 			} catch (Exception $e) {
 				echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
 			}
-			header("location: https://docs.google.com/forms/d/e/1FAIpQLSdsjUgnHmWLVST8QgSkfMc_OaMQIzpx9xhM2J1pgoLh58amyQ/viewform");
+			//header("location: https://docs.google.com/forms/d/e/1FAIpQLSdsjUgnHmWLVST8QgSkfMc_OaMQIzpx9xhM2J1pgoLh58amyQ/viewform");
 		}
 	} else {
 		if ($result = mysqli_query($con, "INSERT INTO emails VALUES ('$u_email', false)")){
