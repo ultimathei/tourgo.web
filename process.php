@@ -40,7 +40,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
 				//Server settings
 				$mail->SMTPDebug = SMTP::DEBUG_SERVER;                      // Enable verbose debug output
 				$mail->isSMTP();                                            // Send using SMTP
-				$mail->Host       = 'localhost';                    // Set the SMTP server to send through
+				$mail->Host       = 'mail.tourgoapp.com';                    // Set the SMTP server to send through
 				$mail->SMTPAuth   = true;                                   // Enable SMTP authentication
 				$mail->Username   = 'company@tourgoapp.com';                     // SMTP username
 				$mail->Password   = '4gcBjf5cTP';                               // SMTP password
