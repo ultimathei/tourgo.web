@@ -124,6 +124,31 @@
 				<div class="left"></div>
 			</div>
 		</div>
+		<div class="About">
+			<h2>How does TOURGO work?</h2>
+			<div class="aboutSections">
+				<div class="aboutSection">
+					<img src="img/png/tourgoers_activities.png" draggable="false"
+						srcset="img/png/tourgoers_activities.png 1x, img/png/tourgoers_activities@2x.png 2x">
+					<p>Choose from a wide range of TOURGO challenges</p>
+				</div>
+				<div class="aboutSection">
+					<img src="img/png/tourgoers_rewards.png" draggable="false"
+						srcset="img/png/tourgoers_rewards.png 1x, img/png/tourgoers_rewards@2x.png 2x">
+					<p>Complete the challenge to win points</p>
+				</div>
+				<div class="aboutSection">
+					<img src="img/png/tourgoers_restaurants.png" draggable="false"
+						srcset="img/png/tourgoers_restaurants.png 1x, img/png/tourgoers_restaurants@2x.png 2x">
+					<p>Collect more points and unlock ever-increasing discounts</p>
+				</div>
+			</div>
+			<div class="aboutCarouselButtons">
+				<button class="active"></button>
+				<button></button>
+				<button></button>
+			</div>
+		</div>
 		<div class="Intro">
 			<div class="Accordion">
 				<div class="titles">
@@ -164,31 +189,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="About">
-			<h2>How does TOURGO work?</h2>
-			<div class="aboutSections">
-				<div class="aboutSection">
-					<img src="img/png/tourgoers_activities.png" draggable="false"
-						srcset="img/png/tourgoers_activities.png 1x, img/png/tourgoers_activities@2x.png 2x">
-					<p>Choose from a wide range of TOURGO challenges</p>
-				</div>
-				<div class="aboutSection">
-					<img src="img/png/tourgoers_rewards.png" draggable="false"
-						srcset="img/png/tourgoers_rewards.png 1x, img/png/tourgoers_rewards@2x.png 2x">
-					<p>Complete the challenge to win points</p>
-				</div>
-				<div class="aboutSection">
-					<img src="img/png/tourgoers_restaurants.png" draggable="false"
-						srcset="img/png/tourgoers_restaurants.png 1x, img/png/tourgoers_restaurants@2x.png 2x">
-					<p>Collect more points and unlock ever-increasing discounts</p>
-				</div>
-			</div>
-			<div class="aboutCarouselButtons">
-				<button class="active"></button>
-				<button></button>
-				<button></button>
-			</div>
-		</div>
+		
 		<footer>
 			<div class="Quotes">
 				<h2>Get Inspired</h2>
