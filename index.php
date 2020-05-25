@@ -17,6 +17,7 @@
 
 	<script src="libs/jquery-3.5.0.min.js"></script>
 	<script src="./app/app.js"></script>
+	
 </head>
 
 <body>
