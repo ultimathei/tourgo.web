@@ -33,7 +33,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 	if (isset($_POST['likeToCompete'])) {
 		if ($result = mysqli_query($con, "INSERT INTO emails VALUES ('$u_email', true)")) {
 			mysqli_free_result($result);
-			echo $u_email;
 			mailer($u_email);
 			//header("location: https://docs.google.com/forms/d/e/1FAIpQLSdsjUgnHmWLVST8QgSkfMc_OaMQIzpx9xhM2J1pgoLh58amyQ/viewform");
 		}
@@ -47,8 +46,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 function mailer($user_email)
 {
-	echo "pippo";
-	echo $user_email;
 	// Instantiation and passing `true` enables exceptions
 	$mail = new PHPMailer;
 
