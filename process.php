@@ -75,17 +75,7 @@ function mailer($user_email)
 	// Content
 	$mail->isHTML(true);                                  // Set email format to HTML
 	$mail->Subject = 'WELCOME TO TOURGO';
-	$mail->Body    = '<!DOCTYPE html
-	PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-  <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
-  
-  <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>TOURGO Email</title>
-  </head>
-  
-  <body style="background-color: #fafafa;">
+	$mail->Body    = '<body style="background-color: #fafafa;">
 	<table class="container" style="
 	width: 600px;
 	margin-left: auto;
@@ -131,7 +121,7 @@ function mailer($user_email)
 						<tr>
 						  <td height="50" style="
 							font-size: 18px; 
-							font-family: 'Montserrat', sans-serif; 
+							font-family: "Montserrat", sans-serif; 
 							font-weight: 400; color: #ffffff; 
 							text-align: left; vertical-align: bottom;
 							padding-left: 10px;
@@ -142,7 +132,7 @@ function mailer($user_email)
 						<tr>
 						  <td height="50" style="
 							font-size: 35px; 
-							font-family: 'Montserrat', sans-serif; 
+							font-family: "Montserrat", sans-serif; 
 							font-weight: 800; color: #ffffff; 
 							text-align: left; 
 							vertical-align: top;
@@ -164,7 +154,7 @@ function mailer($user_email)
 				  width: 40%;
 				  ">
 					<p style="
-					background-image: url('./img/png/tourgoers.png');
+					background-image: url("./img/png/tourgoers.png");
 					background-position: bottom right;
 					background-repeat: no-repeat;
 					background-size: contain;
@@ -192,7 +182,7 @@ function mailer($user_email)
 			  <tr>
 				<td style="
 				font-size: 14px; 
-				font-family: 'Montserrat', sans-serif; 
+				font-family: "Montserrat", sans-serif; 
 				font-weight: 200; color: #000000; 
 				text-align: left; vertical-align: center;
 				">
@@ -219,7 +209,7 @@ function mailer($user_email)
 							  <tr>
 								<td height="100" style="
 								font-size: 14px; 
-								font-family: 'Montserrat', sans-serif; 
+								font-family: "Montserrat", sans-serif; 
 								font-weight: 200; color: #000000; 
 								text-align: left; vertical-align: middle;
 								padding-right: 40px;
@@ -232,7 +222,7 @@ function mailer($user_email)
 							  <tr>
 								<td height="100" style="
 								font-size: 14px; 
-								font-family: 'Montserrat', sans-serif; 
+								font-family: "Montserrat", sans-serif; 
 								font-weight: 200; color: #000000; 
 								text-align: left; vertical-align: middle;
 								padding-right: 40px;
@@ -248,7 +238,7 @@ function mailer($user_email)
 						height:160px; width: 160px;
 						padding: 10px; padding-top: 60px; 
 						text-align: right; vertical-align: middle;
-						background-image: url('./img/png/london_info.png');
+						background-image: url("./img/png/london_info.png");
 						background-position: center;
 						background-repeat: no-repeat;
 						background-size: contain;
@@ -268,7 +258,7 @@ function mailer($user_email)
 				padding: 40px;
 				">
 				  <a href="https://docs.google.com/forms/d/167P-3hHJi3aR0DNAnFFHjuoVFI-dbUs1joTf0gumWuk/viewform?edit_requested=true" target="_blank" style=" 
-				  font-family: 'Montserrat', sans-serif; 
+				  font-family: "Montserrat", sans-serif; 
 				  font-size: 16px; 
 				  font-weight: 400;
 				  font-style: italic;
@@ -289,7 +279,7 @@ function mailer($user_email)
 			  <tr>
 				<td height="120" style="
 				font-size: 14px; 
-				font-family: 'Montserrat', sans-serif; 
+				font-family: "Montserrat", sans-serif; 
 				font-weight: 200; color: #000000; 
 				text-align: left; vertical-align: top;
 				">
@@ -311,7 +301,7 @@ function mailer($user_email)
 			  <tr>
 				<td height="120" style="
 				font-size: 14px; 
-				font-family: 'Montserrat', sans-serif; 
+				font-family: "Montserrat", sans-serif; 
 				font-weight: 200; color: #000000; 
 				text-align: left; vertical-align: top;
 				">
@@ -344,7 +334,7 @@ function mailer($user_email)
 			  <tr>
 				<td height="60" style="
 				font-size: 14px; 
-				font-family: 'Montserrat', sans-serif; 
+				font-family: "Montserrat", sans-serif; 
 				font-weight: 200; color: #000000; 
 				text-align: left; vertical-align: bottom;
 				">
@@ -355,7 +345,7 @@ function mailer($user_email)
 			  <tr>
 				<td height="40" style="
 				font-size: 14px; 
-				font-family: 'Montserrat', sans-serif; 
+				font-family: "Montserrat", sans-serif; 
 				font-weight: 200; color: #000000; 
 				text-align: left; vertical-align: bottom;
 				">
@@ -395,7 +385,7 @@ function mailer($user_email)
 							<tr>
 							  <td width="90" height="90" style="
 							  background-color: #00609B;
-							  background-image: url('./img/png/iconLogo.png');
+							  background-image: url("./img/png/iconLogo.png");
 							  background-repeat: no-repeat;
 							  background-position: top left;
 							  background-size: cover;
@@ -412,7 +402,7 @@ function mailer($user_email)
 									  text-align: left;
 									  padding-bottom: 5px;
 									  font-size: 16px; 
-									  font-family: 'Montserrat', sans-serif; 
+									  font-family: "Montserrat", sans-serif; 
 									  font-weight: 800; color: #000000; 
 									  text-align: left; 
 									  vertical-align: center;
@@ -425,7 +415,7 @@ function mailer($user_email)
 									  text-align: left;
 									  font-size: 11px; 
 									  padding-bottom: 0; 
-									  font-family: 'Montserrat', sans-serif; 
+									  font-family: "Montserrat", sans-serif; 
 									  font-weight: 400;; 
 									  text-align: left; 
 									  vertical-align: center;
@@ -444,7 +434,7 @@ function mailer($user_email)
 									  text-align: left;
 									  font-size: 11px; 
 									  padding-bottom: 0;  
-									  font-family: 'Montserrat', sans-serif; 
+									  font-family: "Montserrat", sans-serif; 
 									  font-weight: 400;; 
 									  text-align: left; 
 									  vertical-align: center;
@@ -463,7 +453,7 @@ function mailer($user_email)
 									  text-align: left;
 									  font-size: 11px; 
 									  padding-bottom: 0;  
-									  font-family: 'Montserrat', sans-serif; 
+									  font-family: "Montserrat", sans-serif; 
 									  font-weight: 400;; 
 									  text-align: left; 
 									  vertical-align: center;
@@ -503,9 +493,7 @@ function mailer($user_email)
 	  </tbody>
 	</table>
   
-  </body>
-  
-  </html>';
+  </body>';
 	$mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
 	if (!$mail->send()) {
