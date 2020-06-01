@@ -499,6 +499,6 @@ function mailer($user_email)
 	if (!$mail->send()) {
 		echo 'Mailer Error: ' . $mail->ErrorInfo;
 	} else {
-		$msg .= 'Message sent!';
+		echo 'Message sent!';
 	}
 }
