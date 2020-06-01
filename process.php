@@ -14,7 +14,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 		echo "<script type='text/javascript'>alert('Please enter a valid email address!');</script>";
 		exit;
 	}
-	echo "<p>" . $u_email . "</p>"; //DEBUG STATEMENT
 
 	//mysql credentials
 	$mysql_host = "localhost";
