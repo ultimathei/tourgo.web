@@ -107,7 +107,7 @@ function mailer($user_email)
 						<tr>
 						  <td height="100" 
 						  style="
-						  background-image: url(./img/png/MainLOGO@2x.png);
+						  background-image: url("./email-img/MainLOGO@2x.png");
 						  background-position: left;
 						  background-repeat: no-repeat;
 						  background-size: contain;
@@ -150,7 +150,7 @@ function mailer($user_email)
 				  width: 40%;
 				  ">
 					<p style="
-					background-image: url("./img/png/tourgoers.png");
+					background-image: url("./email-img/tourgoers.png");
 					background-position: bottom right;
 					background-repeat: no-repeat;
 					background-size: contain;
@@ -234,7 +234,7 @@ function mailer($user_email)
 						height:160px; width: 160px;
 						padding: 10px; padding-top: 60px; 
 						text-align: right; vertical-align: middle;
-						background-image: url("./img/png/london_info.png");
+						background-image: url("./email-img/london_info.png");
 						background-position: center;
 						background-repeat: no-repeat;
 						background-size: contain;
@@ -381,7 +381,7 @@ function mailer($user_email)
 							<tr>
 							  <td width="90" height="90" style="
 							  background-color: #00609B;
-							  background-image: url("./img/png/iconLogo.png");
+							  background-image: url("./email-img/iconLogo.png");
 							  background-repeat: no-repeat;
 							  background-position: top left;
 							  background-size: cover;
@@ -489,7 +489,8 @@ function mailer($user_email)
 	  </tbody>
 	</table>
   
-  </body>';
+  </body>
+  ';
 	$mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
 	if (!$mail->send()) {
