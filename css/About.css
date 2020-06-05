@@ -1,4 +1,5 @@
-.About{
+.About {
+	position: relative;
 	width: 100vw;
 	background-color: #FAFAFA;
 	display: flex;
@@ -6,8 +7,10 @@
 	justify-content: flex-start;
 	align-items: center;
 	padding: 4em 0;
+	padding-bottom: 6em;
 }
-.aboutSections{
+
+.aboutSections {
 	display: flex;
 	flex-grow: 1;
 	width: 100vw;
@@ -17,7 +20,7 @@
 	margin-left: 0;
 }
 
-.aboutSection{
+.aboutSection {
 	margin-top: 1em;
 	width: 30vw;
 	height: 100%;
@@ -29,13 +32,14 @@
 	padding: 2em;
 }
 
-.aboutSection img{
+.aboutSection img {
 	padding: 2em;
 	height: 220px;
 	width: auto;
 	margin-bottom: 1em;
 }
-.aboutCarouselButtons{
+
+.aboutCarouselButtons {
 	display: none;
 	margin-top: 1em;
 	width: 100px;
@@ -43,7 +47,7 @@
 	align-items: center;
 }
 
-.aboutCarouselButtons button{
+.aboutCarouselButtons button {
 	width: 1.4em !important;
 	height: 1.4em !important;
 	border: 2px solid #00609B;
@@ -53,24 +57,25 @@
 	cursor: pointer;
 }
 
-.aboutCarouselButtons button.active{
+.aboutCarouselButtons button.active {
 	background-color: #00609B;
 	color: white;
 }
 
-.aboutCarouselButtons button:hover:not(.active){
+.aboutCarouselButtons button:hover:not(.active) {
 	background-color: #F09819;
 	border-color: #F09819;
 	color: white;
 }
 
-#LandingPage___Desktop>.watchVideoBtn{
+#LandingPage___Desktop>.watchVideoBtn {
 	display: flex;
 	flex-flow: row nowrap;
 	justify-content: center;
 	align-items: center;
 	border: none;
-	background-image: linear-gradient( to bottom right, rgb(85, 85, 85), black);;
+	background-image: linear-gradient( to bottom right, rgb(85, 85, 85), black);
+	;
 	height: 4em;
 	width: 18em;
 	color: white;
@@ -81,51 +86,85 @@
 	left: 50%;
 	padding: 0;
 }
-#LandingPage___Desktop>.watchVideoBtn>*{
+
+#LandingPage___Desktop>.watchVideoBtn>* {
 	margin: 0 .5em;
 }
-#LandingPage___Desktop>.watchVideoBtn svg{
+
+#LandingPage___Desktop>.watchVideoBtn svg {
 	fill: white;
 	height: 2em;
 }
-#LandingPage___Desktop>.watchVideoBtn:hover{
+
+#LandingPage___Desktop>.watchVideoBtn:hover {
 	background-image: linear-gradient( to bottom right, #F09819, #FF512F);
 }
 
-.aboutSection img::-moz-selection{
+.aboutSection img::-moz-selection {
 	background-color: none !important;
 }
 
 .aboutSection img::selection {
-	background-color: none !important ;
+	background-color: none !important;
 }
 
+.About .goToSurveyButton {
+	position: absolute;
+	bottom: -2em;
+	background-image: linear-gradient( to bottom right, #FF512F, #F09819);
+	color: white;
+	fill: white;
+	display: flex;
+	flex-flow: row;
+	align-items: center;
+	padding: 1em 2em;
+	border-radius: 5px;
+	transform: scale(1);
+	transition: transform 0.5s;
+	text-transform: uppercase;
+}
 
-@media only screen and (max-width: 400px){
-	.About h2{
+.About .goToSurveyButton:hover {
+	transform: scale(1.05);
+	transition: transform 0.5s;
+}
+
+.About .goToSurveyButton svg{
+	height: 1em;
+	width: auto;
+}
+
+#wink{
+	height: 2em;
+}
+
+.About .goToSurveyButton>* {
+	margin: 0 .5em;
+}
+
+@media only screen and (max-width: 400px) {
+	.About h2 {
 		font-size: 1em;
 	}
 }
 
-@media only screen and (orientation: landscape){
-	.aboutSections{
+@media only screen and (orientation: landscape) {
+	.aboutSections {
 		margin-left: unset !important;
 	}
 }
 
-@media only screen and (orientation: portrait){
-	.aboutCarouselButtons{
+@media only screen and (orientation: portrait) {
+	.aboutCarouselButtons {
 		display: flex;
 	}
-
-	.aboutSections{
+	.aboutSections {
 		width: 300vw;
 		max-width: unset;
 		margin-left: 0;
 		align-self: flex-start;
 	}
-
-	.aboutSection{
+	.aboutSection {
 		width: 100vw;
 	}
 }
