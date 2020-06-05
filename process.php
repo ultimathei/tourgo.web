@@ -29,7 +29,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 	}
 
 	// Perform query
-	if (isset($_POST['likeToCompete'])) {
+	if (isset($_POST['acceptAll'])) {
 		if ($result = mysqli_query($con, "INSERT INTO emails VALUES ('$u_email', true)")) {
 			mysqli_free_result($result);
 			mailer($u_email);

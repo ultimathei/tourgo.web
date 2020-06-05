@@ -3,6 +3,7 @@
  * using jQuery javascript library
  */
 $(document).ready(function () {
+  $('.goToFormBtn').click(handleFormSubmit);
   toggleHeaderHandler();
   carouselBtnHandler(".aboutCarouselButtons button", ".aboutSections");
   carouselBtnHandler(".quoteCarouselButtons button", ".quotesList");
@@ -48,14 +49,14 @@ const swipeHandler = (container, moveableSelector, buttonsSelector) => {
   let margLeftInit = null;
   const threshold = 50;
   $(container)
-    .bind('mousedown touchstart',function (event) {
+    .bind('mousedown touchstart', function (event) {
       isDragging = false;
       isCursorDown = true;
       cursorPosStart = event.pageX;
       aboutWidth = $(container).width();
       margLeftInit = $(moveableSelector).css('margin-left');
     })
-    .bind('mousemove touchmove',function (event) {
+    .bind('mousemove touchmove', function (event) {
       if (isCursorDown) {
         isDragging = true;
         $(moveableSelector).css({
@@ -63,14 +64,14 @@ const swipeHandler = (container, moveableSelector, buttonsSelector) => {
         })
       }
     })
-    .bind('mouseup touchend',function (event) {
+    .bind('mouseup touchend', function (event) {
       let wasDragging = isDragging;
       isDragging = false;
       isCursorDown = false;
       cursorPosEnd = event.pageX;
       if (wasDragging && !isInProgress) {
         let dragged = cursorPosStart - cursorPosEnd;
-        const activeItem = $(buttonsSelector+'.active');
+        const activeItem = $(buttonsSelector + '.active');
         const buttons = $(buttonsSelector);
         const activeBtnIndex = buttons.index(activeItem);
 
@@ -91,14 +92,14 @@ const swipeHandler = (container, moveableSelector, buttonsSelector) => {
         $(moveableSelector).animate({
           marginLeft: newMargin + '%'
         },
-        500,
-        function () {
-          isInProgress = false;
-        })
+          500,
+          function () {
+            isInProgress = false;
+          })
       }
     })
     //reset on mouseleave
-    .bind('mouseleave ',function (event) {
+    .bind('mouseleave ', function (event) {
       let wasDragging = isDragging;
       isDragging = false;
       isCursorDown = false;
@@ -114,6 +115,12 @@ const swipeHandler = (container, moveableSelector, buttonsSelector) => {
           })
       }
     })
+}
+
+//email validation on client side
+const validateEmail = (email) => {
+  const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  return re.test(String(email).toLowerCase());
 }
 
 //swap intro text content on click
@@ -231,4 +238,105 @@ function toggleHeaderHandler() {
 
     lastScrollTop = st;
   }
+}
+
+//handle click on submit button
+const handleFormSubmit = (e) => {
+  e.preventDefault();
+  const email = $('#email')[0].value;
+  const accepted = $('#acceptAll')[0].checked;
+  let errorMsg = [];
+  console.log(errorMsg);
+
+
+  if (!validateEmail(email))
+    errorMsg.push('Please type in a valid email address!');
+  if (!accepted)
+    errorMsg.push('You have to accept our T&C and Privacy Policy to participate!');
+
+  return (errorMsg.length === 0) ?
+    submitForm(email) :
+    displayErrorMsg(errorMsg);
+}
+
+//displaying form errors to client
+let errorMsgTimeout;
+const displayErrorMsg = (msg) => {
+  let messageBox = document.createElement("a");
+  msg.map(item => {
+    let p = document.createElement("p");
+    p.innerHTML = item;
+    messageBox.appendChild(p);
+  })
+  messageBox.id = "errorMsg";
+  messageBox.href = "#";
+  messageBox.onclick = (e) => {
+    e.preventDefault();
+    clearTimeout(errorMsgTimeout);
+    removeErrorMsg();
+  };
+
+  if ($('#errorMsg').length > 0) $('#errorMsg').replaceWith(messageBox);
+  else $('body')[0].append(messageBox);
+
+  //slide up
+  $('#errorMsg').animate({
+    bottom: '3vh',
+    opacity: 1
+  }, 500);
+
+  if (errorMsgTimeout) clearTimeout(errorMsgTimeout);
+  //hide message after 5 seconds
+  errorMsgTimeout = setTimeout(() => {
+    removeErrorMsg();
+  }, 5000);
+}
+
+//slide up element
+const removeErrorMsg = () => {
+  $('#errorMsg').animate({
+    bottom: '-20vh',
+    opacity: 0
+  }, 500, () => {
+    $('#errorMsg').remove();
+  });
+}
+
+//submit the form here
+const submitForm = (email) => {
+  console.log('submiting form..');
+
+  removeErrorMsg();
+
+  $.ajax({
+    url: 'process.php',
+    type: 'post',
+    data: {
+      ajax: 1,
+      //form data added below:
+      email: email
+    },
+    success: function (response) {
+      //$('#response').text('name : ' + response);
+      //TODO based on response from server render message
+      console.log(response);
+
+      const tempResponse = 'success';
+      if (tempResponse) {
+        let messageBox = document.createElement("div");
+        let h2 = document.createElement("h2");
+        h2.innerHTML = 'Thank you';
+        messageBox.appendChild(h2);
+        let p = document.createElement("p");
+        p.innerHTML = 'for signing up!';
+        messageBox.appendChild(p);
+        messageBox.id = 'signUpResponse';
+
+        $('.HomeRightTop').html(messageBox);
+
+      }
+
+      //$('.HomeRightTop').remove();
+    }
+  });
 }

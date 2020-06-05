@@ -16,7 +16,8 @@
 	<link rel="stylesheet" type="text/css" href="./css/Footer.css">
 
 	<script src="libs/jquery-3.5.0.min.js"></script>
-	<script src="./app/app.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="./app/app.js" defer></script>
 	
 </head>
 
@@ -92,7 +93,7 @@
 					<div class="featureBubble">Feature one</div>
 					<div class="featureBubble">Feature two</div>
 					<div class="featureBubble">Feature three</div>
-					<img id="iphone_X" src="img/png/iphone_X.png" srcset="img/png/iphone_X.png 1x, img/png/iphone_x@2x.png 2x">
+					<img id="iphone_X" src="./img/png/iphone_x.png" srcset="./img/png/iphone_x.png 1x, ./img/png/iphone_x@2x.png 2x">
 				</div>
 				<form id="HomeRight" action="process.php" method="POST">
 					<div class="HomeRightTop">
@@ -114,9 +115,9 @@
 							</button>
 						</div>
 						<div class="inputCheckbox">
-							<label for="likeToCompete">I'd like to get notified about TOURGO<br />
-								and take part in the competition</label>
-							<input type="checkbox" id="likeToCompete" name="likeToCompete" />
+							<label for="acceptAll">I accept the <a href="" target="_blank">Privacy Policy</a> <br />
+								and <a href="" target="_blank">Terms&Conditions</a></label>
+							<input type="checkbox" id="acceptAll" name="acceptAll" />
 						</div>
 					</div>
 				</form>
