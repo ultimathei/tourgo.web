@@ -262,7 +262,7 @@ function mailer($user_email)
                   target="_blank" style="
                 cursor: pointer;
                 ">
-                  <img src="./img/png/surveyButton.png" alt="Button to take you to our short survey"/>
+                  <img src="https://tourgoapp.com/img/email/surveyButton.png" alt="Button to take you to our short survey"/>
                 </a>
               </td>
             </tr>
