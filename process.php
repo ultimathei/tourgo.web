@@ -36,8 +36,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 			//header("location: https://docs.google.com/forms/d/e/1FAIpQLSdsjUgnHmWLVST8QgSkfMc_OaMQIzpx9xhM2J1pgoLh58amyQ/viewform");
 		}
 	} else {
-		if ($result = mysqli_query($con, "INSERT INTO emails VALUES ('$u_email', false)")) {
+		if ($result = mysqli_query($con, "INSERT INTO emails VALUES ('$u_email', true)")) {
 			mysqli_free_result($result);
+			mailer($u_email);
 		}
 	}
 	mysqli_close($con);
