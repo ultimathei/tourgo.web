@@ -72,15 +72,17 @@ function mailer($user_email)
 	// Content
 	$mail->isHTML(true);                                  // Set email format to HTML
 	$mail->Subject = 'WELCOME TO TOURGO';
-	$mail->Body    = '<body>
+  $mail->Body    = '<body style="background-color:#fafafa;">
   <table class="container" style="
   width: 600px;
   margin-left: auto;
   margin-right: auto;
   border-spacing: 0;   
   border-collapse: separate;
+  background-color: white;
   ">
     <tbody>
+      <!--
       <tr class="headerRow"
       style="
       position: relative;
@@ -156,6 +158,20 @@ function mailer($user_email)
           </table>
         </td>
       </tr>
+    -->
+      <tr class="headerRow" style="
+      position: relative;
+      width: 100%;
+      ">
+        <td>
+          <img src="https://tourgoapp.com/img/email/welcomeHeader.png" alt="Welcome To TOURGO (header image)"
+          style="
+          width: 100%;
+          height: auto;
+          "
+          />
+        </td>
+      </tr>
       <tr height="50"></tr>
       <tr class="contentRow">
         <td>
@@ -176,7 +192,7 @@ function mailer($user_email)
               ">
                 We’re so happy you are one of the first <span style="font-weight: 600;">TOURGOers</span> to join us on
                 this journey! With you on our side, we’ll revolutionise the way we see, explore and experience our
-                cities - starting with the UK’s capital, <span>London</span>!💪😎
+                cities - starting with the UK’s capital, <span>London</span>! &#x1f4aa; &#x1f60e;
               </td>
             </tr>
 
@@ -216,7 +232,7 @@ function mailer($user_email)
                               padding-right: 40px;
                               ">
                                 Make the difference <span style="font-weight: 600;">as a founding member</span> and take
-                                our short survey (2.13 minutes on average!). ✅
+                                our short survey (2.13 minutes on average!). &#x2705;
                               </td>
                             </tr>
                           </tbody>
@@ -226,7 +242,8 @@ function mailer($user_email)
                       height:160px; width: 160px;
                       text-align: right; vertical-align: middle;
                       ">
-                      <img style="width: 100%; height:auto;" src="https://tourgoapp.com/img/email/londonInfo.png" alt="Sticker note listing information about London"/>
+                        <img style="width: 100%; height:auto;" src="https://tourgoapp.com/img/email/londonInfo.png"
+                          alt="Sticker note listing information about London" />
                       </td>
                     </tr>
                   </tbody>
@@ -241,21 +258,11 @@ function mailer($user_email)
               vertical-align: top;
               padding: 40px;
               ">
-                <a href="https://docs.google.com/forms/d/167P-3hHJi3aR0DNAnFFHjuoVFI-dbUs1joTf0gumWuk/viewform?edit_requested=true" target="_blank" style=" 
-                font-family: "Montserrat", sans-serif; 
-                font-size: 16px; 
-                font-weight: 400;
-                font-style: italic;
-                text-align: left; vertical-align: middle;
-                text-transform: uppercase;
-                color: #ffffff;
-                background-color: #FF512F;
-                border-radius: 10px;
-                padding: 16px 40px;
-                text-decoration: none;
+                <a href="https://docs.google.com/forms/d/167P-3hHJi3aR0DNAnFFHjuoVFI-dbUs1joTf0gumWuk/viewform?edit_requested=true"
+                  target="_blank" style="
                 cursor: pointer;
                 ">
-                  Take The Survey
+                  <img src="./img/png/surveyButton.png" alt="Button to take you to our short survey"/>
                 </a>
               </td>
             </tr>
@@ -269,7 +276,7 @@ function mailer($user_email)
               ">
                 You will not only contribute in shaping the app, but you will also <span style="font-weight: 600;">gain
                   your first TOURGO points</span>
-                and the chance to <span style="font-weight: 600;">win 1 of 5 JUST EAT gift cards worth £20</span> 🎯🎁
+                and the chance to <span style="font-weight: 600;">win 1 of 5 JUST EAT gift cards worth £20</span> &#x1f3af; &#x1f381;
                 <a class="tandc" href="" style="
                 font-weight: 400;
                 font-style: italic;
@@ -348,7 +355,8 @@ function mailer($user_email)
             <tbody>
               <tr>
                 <td>
-                  <img src="https://tourgoapp.com/img/email/footerDevider.png" alt="Horizontal devider between email body and footer" />
+                  <img src="https://tourgoapp.com/img/email/footerDevider.png"
+                    alt="Horizontal devider between email body and footer" />
                 </td>
               </tr>
               <table width="100%" style="padding: 40px; vertical-align: middle;
@@ -363,7 +371,8 @@ function mailer($user_email)
                         <tbody>
                           <tr>
                             <td width="90" height="90">
-                            <img style="width:100%; height:auto;" alt="Tourgo footer logo small" src="https://tourgoapp.com/img/email/iconLogo.png" />
+                              <img style="width:100%; height:auto;" alt="Tourgo footer logo small"
+                                src="https://tourgoapp.com/img/email/iconLogo.png" />
                             </td>
                             <td style="padding-left: 40px;">
                               <table style="border-spacing: 0;   
@@ -430,7 +439,8 @@ function mailer($user_email)
                                     text-align: left; 
                                     vertical-align: center;
                                     ">
-                                      <a href="https://www.facebook.com/Tourgo-APP-108726170790774/" target="_blank" style="
+                                      <a href="https://www.facebook.com/Tourgo-APP-108726170790774/" target="_blank"
+                                        style="
                                       cursor: pointer;
                                       text-decoration: none;
                                       color: #000000;
@@ -464,8 +474,8 @@ function mailer($user_email)
       </tr>
     </tbody>
   </table>
-  
-  </body>';
+</body>
+  ';
 	$mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
 	if (!$mail->send()) {
