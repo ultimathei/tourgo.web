@@ -309,8 +309,8 @@ const submitForm = (email) => {
   removeErrorMsg();
 
   $.ajax({
+    type: 'POST',
     url: 'process.php',
-    type: 'post',
     data: {
       ajax: 1,
       //form data added below:
