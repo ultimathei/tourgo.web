@@ -340,7 +340,7 @@ function mailer($user_email)
               font-weight: 200; color: #000000; 
               text-align: left; vertical-align: bottom;
               ">
-                Thank you very much for joining us,
+                Thank you very much for joining us,<br/>It\'s time TOURGO!
               </td>
             </tr>
           </table>
@@ -406,7 +406,7 @@ function mailer($user_email)
                                       text-decoration: none;
                                       color: #000000;
                                       ">
-                                        company@tourgo.com
+                                        company@tourgoapp.com
                                       </a>
                                     </td>
                                   </tr>
@@ -425,7 +425,7 @@ function mailer($user_email)
                                       text-decoration: none;
                                       color: #000000;
                                       ">
-                                        www.tougoapp.com
+                                        www.tourgoapp.com
                                       </a>
                                     </td>
                                   </tr>
