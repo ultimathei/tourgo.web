@@ -60,7 +60,7 @@ function mailer($user_email)
 	$mail->Port       = 995;                                    // TCP port to connect to, use 465 for `PHPMailer::ENCRYPTION_SMTPS` above
 
 	//Recipients
-	$mail->setFrom('company@tourgoapp.com', 'TOURGO LTD');
+	$mail->setFrom('company@tourgoapp.com', 'TOURGO APP');
 	$mail->addAddress($user_email);     // Add a recipient
 	//$mail->addAddress('marcella.vincenzo2@gmail.com');
 
