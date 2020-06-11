@@ -110,7 +110,7 @@
 						</div>
 						<div class="inputCheckbox">
 							<label for="acceptAll">I accept the <a href="privacypolicy.pdf" target="_blank">Privacy Policy</a> <br />
-								and <a href="terms-and-conditions.pdf" target="_blank">Terms&Conditions</a></label>
+								and <a href="termsandconditions.pdf" target="_blank">Terms&Conditions</a></label>
 							<input type="checkbox" id="acceptAll" name="acceptAll" />
 						</div>
 					</div>
