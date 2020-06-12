@@ -118,9 +118,12 @@
 	flex-flow: row;
 	align-items: center;
 	padding: 1em 2em;
+	width: 100%;
+	max-width: 334px;
 	border-radius: 5px;
 	transform: scale(1);
 	transition: transform 0.5s;
+	text-align: center;
 	text-transform: uppercase;
 }
 
@@ -129,12 +132,12 @@
 	transition: transform 0.5s;
 }
 
-.About .goToSurveyButton svg{
+.About .goToSurveyButton svg {
 	height: 1em;
 	width: auto;
 }
 
-#wink{
+#wink {
 	height: 2em;
 }
 
