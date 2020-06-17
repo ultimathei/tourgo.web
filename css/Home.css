@@ -2,6 +2,7 @@
 	position: relative;
 	width: 100vw;
 	height: 100vh;
+	min-height: 500px;
 	max-height: 900px;
 	display: flex;
 	flex-flow: row wrap;
@@ -220,6 +221,7 @@
 .HomeRightTop .inputField {
 	border-radius: .8em;
 	justify-content: space-between;
+	min-height: 4em;
 }
 
 .HomeRightTop .inputField>input {
@@ -666,7 +668,22 @@
 	.HomeRightTop p{
 		text-align: center !important;
 	}
+}
 
+@media only screen and (max-width: 500px) {
+	#HomeRight .inputField>input{
+		background: white;
+    padding: .5em;
+    border-radius: .6em;
+    margin-bottom: .5em;
+	}
+	#HomeRight .inputField{
+		flex-flow: column;
+		background: none;
+	}
+	#HomeRight .HomeRightTop button{
+		width: 100%;
+	}
 }
 
 @media only screen and (orientation: landscape) and (max-width: 850px) {
@@ -681,6 +698,10 @@
 	}
 	.aboutCarouselButtons {
 		display: flex !important;
+	}
+	#HomeRight .HomeRightTop {
+		font-size: .8em;
+		max-width: 50% !important;
 	}
 
 }
