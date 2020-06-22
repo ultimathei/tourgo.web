@@ -277,15 +277,16 @@ function mailer($user_email)
                 You will not only contribute in shaping the app, but you will also <span style="font-weight: 600;">gain
                   your first TOURGO points</span>
                 and the chance to <span style="font-weight: 600;">win 1 of 5 JUST EAT gift cards worth £20</span> &#x1f3af; &#x1f381;
-                <a class="tandc" href="" style="
+                <a class="tandc" href="https://tourgoapp.com/termsandconditions.pdf" style="
                 font-weight: 400;
                 font-style: italic;
                 color: #FF512F;
                 text-decoration: none;
                 cursor: pointer;
+                white-space: nowrap;
                 ">
-                  ( Read terms and conditions )
-                </a>!
+                  (Read terms and conditions)!
+                </a>
               </td>
             </tr>
 
@@ -317,8 +318,8 @@ function mailer($user_email)
                 text-decoration: none;
                 cursor: pointer;
                 ">
-                  Facebook
-                </a>!
+                  Facebook!
+                </a>
               </td>
             </tr>
 
